@@ -4,7 +4,7 @@ Artheon's plugin marketplace, named `artheon`. It ships the Agent Skills behind 
 
 | Plugin | Skills | For |
 |---|---|---|
-| `knowledge-base` | `notion-nightly-maintenance`, `notion-weekly-maintenance` | Everyone using a Notion knowledge base built from Artheon's template |
+| `knowledge-base` | `kb-setup`, `notion-nightly-maintenance`, `notion-weekly-maintenance` | Everyone using a Notion knowledge base built from Artheon's template |
 | `sales` | `daily-outreach`, `weekly-sales-review` | People who sell, in a base with the CRM module |
 
 ## Add the marketplace
