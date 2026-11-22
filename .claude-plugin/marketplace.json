@@ -1,0 +1,16 @@
+{
+  "name": "artheon",
+  "description": "Artheon's plugins: Agent Skills for the knowledge base and the rest of Artheon's offer.",
+  "owner": {
+    "name": "Artheon",
+    "url": "https://artheon.ai"
+  },
+  "plugins": [
+    {
+      "name": "knowledge-base",
+      "source": "./plugins/knowledge-base",
+      "description": "Set up and maintain a Notion knowledge base built from Artheon's template.",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "knowledge-base",
+  "version": "0.1.0",
+  "description": "Set up and maintain a Notion knowledge base built from Artheon's template.",
+  "author": {
+    "name": "Artheon",
+    "url": "https://artheon.ai"
+  },
+  "homepage": "https://github.com/Artheon-AI/skills",
+  "repository": "https://github.com/Artheon-AI/skills",
+  "license": "MIT",
+  "keywords": ["notion", "knowledge-base", "maintenance"]
+}
