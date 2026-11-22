@@ -7,11 +7,12 @@ Contents: B1 remove; B2 translate; B3 module and part settings; B4 template sect
 ## B1 Remove what was not chosen
 
 1. From "Parts chosen and removed" and the [parts manifest](parts-manifest.md), list every part to remove, grouped: pages, databases, properties and views, template sections, Agent Instructions text. Show the list and remove after the owner's yes.
-2. **Project management not chosen:** first turn Sprints off in the app (A4, "Not chosen"), because Sprints must be off before Issues goes. Then trash `db-issues`, `db-cycle-board` (if still there) and `db-milestones`; drop Projects' Issues, Milestones, Progress, Health and Priority (`props-projects-pm`); remove the Issues line from How we work's Records (`rec-issues`).
-3. **CRM module not chosen:** trash `db-deals`; drop Clients' Do not contact, Health, Deals, Open deal value and Open renewal, People's Warmth and Do not contact, and Meetings' Deal; rewrite People's Roles options without Connector (no rows exist yet, so a full option list is safe); remove the Deals line on Customers and offer (`rec-deals`). The leftover views (Clients Watch and Renewals; People By warmth, Connectors, Do not contact) go in A6.
-4. **CRM module chosen:** drop "CRM record" on Clients and People (`prop-crm-record`).
-5. Pages and databases not kept: trash them (the MCP's delete tools move them to Trash). With `db-proof` removed, also its Records line (`rec-proof`); with `db-hiring` removed, the "Open hiring" heading and view on the Management wiki (`mgmt-open-hiring`). Remove linked views and lines with targeted `update_content` edits that keep every other block, including the hubs' `<page>` tags.
-6. Agent Instructions text for removed modules (`ai-pm`, `ai-sales`) is handled in B7.
+2. A database with a two-way relation leaves its synced side on the other database (Equipment's Holder shows on People as Equipment; Deals' Client on Clients as Deals). Drop the relation pair first (`DROP COLUMN` on one side drops both), then trash the database.
+3. **Project management not chosen:** first turn Sprints off in the app (A4, "Not chosen"), because Sprints must be off before Issues goes. Then trash `db-issues`, `db-cycle-board` (if still there) and `db-milestones`; drop Projects' Issues, Milestones, Progress, Health and Priority (`props-projects-pm`); remove the Issues line from How we work's Records (`rec-issues`).
+4. **CRM module not chosen:** trash `db-deals`; drop Clients' Do not contact, Health, Deals, Open deal value and Open renewal, People's Warmth and Do not contact, and Meetings' Deal; rewrite People's Roles options without Connector (no rows exist yet, so a full option list is safe); remove the Deals line on Customers and offer (`rec-deals`). The leftover views (Clients Watch and Renewals; People By warmth, Connectors, Do not contact) go in A6.
+5. **CRM module chosen:** drop "CRM record" on Clients and People (`prop-crm-record`).
+6. Pages and databases not kept: trash them (the MCP's delete tools move them to Trash). With `db-proof` removed, also its Records line (`rec-proof`); with `db-hiring` removed, the "Open hiring" heading and view on the Management wiki (`mgmt-open-hiring`). Remove linked views and lines with targeted `update_content` edits that keep every other block, including the hubs' `<page>` tags.
+7. Agent Instructions text for removed modules (`ai-pm`, `ai-sales`) is handled in B7.
 
 Done when every part listed for removal is in Trash or dropped, and the parts map marks each one "removed <date>".
 
