@@ -16,14 +16,14 @@ Steps the person already did (a plugin installed, Notion connected) are checked 
 ## P2 Notion
 
 - Connect Notion in the Claude app (Settings > Connectors > Notion > Connect). On Team, the owner has enabled it for the organisation (A9).
-- Turn off Notion Memory: Notion > Settings > Notion AI > Memory > "Use memories" off. The knowledge base is the memory. The MCP cannot read this setting: ask the person to confirm it is off.
+- Turn off Notion Memory: Notion > Settings > Notion AI > the **Me** tab > Memory > "Use memories" off. The knowledge base is the memory. The MCP cannot read this setting: ask the person to confirm it is off.
 
 Check: `notion-get-self` returns the person and the company workspace.
 
 ## P3 Personal space
 
 1. Duplicate the personal space template (the child of the Template page) with `notion-duplicate-page`. Members can only view it once Agent Instructions is locked, so for a member, first ask the owner to give this person "Can edit" on the personal space template (its Share menu), duplicate, then ask the owner to remove that access again.
-2. Move the copy into the person's Private section with the app step in [app-only steps](app-only-steps.md), "Private pages". Then move its children to the top of the Private section in this order: Agent Instructions - \<Name>, Notes, Projects, My wiki, then any kept optional parts, the same way. Trash the empty copy page.
+2. Move the copy into the person's Private section with the app step in [app-only steps](app-only-steps.md), "Private pages". Then move its children to the Private section with the same app step. Each move puts the page at the top and the MCP cannot reorder Private pages, so move them in reverse order: kept optional parts first, then My wiki, Projects, Notes, and Agent Instructions - \<Name> last, so it ends on top. Reload and check the order. Trash the empty copy page.
 3. Rename "Agent Instructions - \<Name>" with the person's name.
 4. Keep what the person uses (manifest "Personal space"): Projects for owners, optional for others; the 1:1 page for managers (duplicate it once per report, rename it "1:1 - \<Report>", share it with that person); Reading, private People and Tasks only on a yes. Trash the rest.
 5. My wiki: check it is a wiki (A2). Ask for the person's areas of life and work, create one top-level My wiki page per area, and add the same names as options of Area on Notes and Projects.
