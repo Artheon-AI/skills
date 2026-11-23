@@ -114,7 +114,7 @@ Pages ticked "Requires edit approval" change only after an explicit yes, for eve
 - Issues raised by people outside the team, or suggested by you unasked, start at Triage.
 - Notion creates and closes cycles. Find the current one through the Current cycle view, and never create cycle pages.
 - When a sub-issue joins a cycle, put its parent in that cycle too.
-- Trashing a parent leaves its sub-issues: move or trash them yourself.
+- Before trashing a parent issue, move or trash its sub-issues; Notion leaves them behind. When the person named only the parent, ask about the sub-issues first.
 - Work goes to an agent in the conversation, or by setting Owner to that agent's Notion member.
 
 ### Sales

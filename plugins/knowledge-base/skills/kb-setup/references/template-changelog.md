@@ -29,11 +29,12 @@ Each entry has:
 
 ## 1.1 (2026-11-23)
 
-**For people:** the "Where things go" row for contracts now says a Contracts record holds the dates and a link to the signed file, and the terms stay in the file. In walkthroughs, agents copied the key terms into the record's body.
+**For people:** two rules from walkthroughs on Artheon's base. The "Where things go" row for contracts now says a Contracts record holds the dates and a link to the signed file, and the terms stay in the file (agents copied the key terms into the record's body). The Project management line on parent issues now says to settle the sub-issues before trashing the parent (agents trashed the parent and left the sub-issues behind).
 
 **Steps for agents:**
 1. In "How this base works" > "Where things go", replace the right-hand cell of the row "A contract, subscription or domain" with: `Contracts (Management): its dates and a link to the signed file; the terms stay in the file`. Done when the cell reads exactly that.
-2. Move the version line to `Template version 1.1, <date>` (step 6 above).
+2. In "How this base works" > "Project management", replace the line starting "Trashing a parent leaves its sub-issues" with: `Before trashing a parent issue, move or trash its sub-issues; Notion leaves them behind. When the person named only the parent, ask about the sub-issues first.` Done when the section holds that line and not the old one.
+3. Move the version line to `Template version 1.1, <date>` (step 6 above).
 
 ## 1.0 (2026-11-22)
 
