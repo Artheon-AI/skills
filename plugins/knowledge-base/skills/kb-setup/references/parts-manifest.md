@@ -158,7 +158,7 @@ Properties, views, template sections and text that belong to a module or busines
 | `props-people-crm` | Warmth and Do not contact properties; Roles option Connector; By warmth, Connectors and Do not contact views | `db-people` | All | CRM module chosen | CRM |
 | `props-meetings-crm` | Deal property | `db-meetings` | All | CRM module chosen | CRM |
 | `rec-deals` | Deals line under Records | `hub-customers` | All | CRM module chosen | CRM |
-| `ai-sales` | "Sales" section; Deals table row; Clients' Watch and Renewals links; "A sales ask, upsell or renewal" row in Where things go | `agent-instructions` | All | CRM module chosen | CRM |
+| `ai-sales` | "Sales" section; Deals table row; Clients' Watch and Renewals links; People's By warmth and Connectors links; "A sales ask, upsell or renewal" row in Where things go | `agent-instructions` | All | CRM module chosen | CRM |
 | `prop-crm-record` | CRM record property | `db-clients`, `db-people` | All | CRM module not chosen | CRM |
 | `rec-proof` | Proof line under Records | `hub-customers` | Service firms | With `db-proof` | - |
 | `mgmt-open-hiring` | "Open hiring" heading and its linked view | `wiki-management` | - | With `db-hiring` | - |

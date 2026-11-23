@@ -1,6 +1,6 @@
 # Template texts
 
-The current English texts setup writes or checks, for template version 1.1. In a translated base, setup writes them in the base's language. Placeholders are in angle brackets.
+The current English texts setup writes or checks, for template version 1.2. In a translated base, setup writes them in the base's language. Placeholders are in angle brackets.
 
 Contents: version line; "How this base works"; "This company"; text that depends on answers; formulas; descriptions; wiki properties; database templates; Agent Instructions - \<Name>; custom instructions block; task prompts; Template page lines.
 
@@ -166,7 +166,7 @@ Rows of the databases table in the master, with their "What goes here" and main 
 | Projects | Work being done; client work titled "Client - Deliverable" | In progress, Mine, Edited recently | Project |
 | Meetings | Meeting notes, "YYYY-MM-DD Topic - Counterparty" | Recent, Mine, Edited recently | Meeting, Retro |
 | Clients | Each client, a company or one person | Clients, Prospects, Watch, Renewals, Edited recently | Client |
-| People | People we work with and our team | Team, Org chart, All, Edited recently | Person |
+| People | People we work with and our team | Team, Org chart, By warmth, Connectors, All, Edited recently | Person |
 | Processes | Recurring work, titled as a verb phrase | Map, By owner, Proposed, Edited recently | Process |
 | Partners | Suppliers, subcontractors, vendors, referral partners | Active, Edited recently | Partner |
 | Decisions | Decisions, titled as the decision itself | Recent, Proposed, Edited recently | Decision |

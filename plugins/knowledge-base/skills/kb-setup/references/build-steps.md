@@ -118,7 +118,7 @@ Done when every kept database's templates are listed with their IDs.
 
 Edit with targeted `update_content`; the page may be locked, and the owner's edits still go through. Texts and formats are in [template texts](template-texts.md).
 - Replace \<Company> and \<HR system or Management documents>.
-- **Databases table:** one row per kept database, with this copy's database mention, what goes here, `collection://` URL, main views as links (`https://app.notion.com/p/<database id>?v=<view id without dashes>`) and template IDs from B6. Drop rows of removed databases.
+- **Databases table:** one row per kept database, with this copy's database mention, what goes here, `collection://` URL, main views as links (`https://app.notion.com/p/<database id>?v=<view id without dashes>`) and template IDs from B6. Drop rows of removed databases. Without the CRM module, leave out the Clients Watch and Renewals links and the People By warmth and Connectors links.
 - **Hubs:** the seven hub mentions with their lines; drop mentions of removed pages from the lines.
 - **Systems map:** the rows from S4 and S8, plus the CRM row without the CRM module, and the storage row (B11).
 - **Kept outside this base:** the password manager, HR records system, pay page and whistleblowing channel as answered.

@@ -27,6 +27,14 @@ Each entry has:
 5. "This company" and "Company notes" are the company's: never touch them.
 6. Last, when every step is checked: move the Agent Instructions version line to the new version and date, change the Template page's "Template version" line to match, and write `<version> applied <date>` under Updates.
 
+## 1.2 (2026-11-23)
+
+**For people:** the People row of the databases table now lists the By warmth and Connectors views, with the CRM module. An agent asked for connectors or a person's warmth searched the database by hand because the row named only Team, Org chart, All and Edited recently (findability walkthrough on Artheon's base).
+
+**Steps for agents** (only for a base with the CRM module):
+1. In "This company" > "Databases", in the People row's "Main views" cell, add `[By warmth](<link>)` and `[Connectors](<link>)` after Org chart, each linking this base's own People view of that name (`https://app.notion.com/p/<database id>?v=<view id without dashes>`). Updates otherwise leave "This company" alone: name this addition to the owner and make it after their yes. Done when the cell lists Team, Org chart, By warmth, Connectors, All, Edited recently and both new links open the right views.
+2. Move the version line to `Template version 1.2, <date>` (step 6 above).
+
 ## 1.1 (2026-11-23)
 
 **For people:** two rules from walkthroughs on Artheon's base. The "Where things go" row for contracts now says a Contracts record holds the dates and a link to the signed file, and the terms stay in the file (agents copied the key terms into the record's body). The Project management line on parent issues now says to settle the sub-issues before trashing the parent (agents trashed the parent and left the sub-issues behind).
