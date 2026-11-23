@@ -1,6 +1,6 @@
 # Template texts
 
-The current English texts setup writes or checks, for template version 1.0. In a translated base, setup writes them in the base's language. Placeholders are in angle brackets.
+The current English texts setup writes or checks, for template version 1.1. In a translated base, setup writes them in the base's language. Placeholders are in angle brackets.
 
 Contents: version line; "How this base works"; "This company"; text that depends on answers; formulas; descriptions; wiki properties; database templates; Agent Instructions - \<Name>; custom instructions block; task prompts; Template page lines.
 
@@ -80,7 +80,7 @@ Pages ticked "Requires edit approval" change only after an explicit yes, for eve
 | A sales ask, upsell or renewal | Deals |
 | Something about a person | People |
 | A supplier, subcontractor or vendor | Partners |
-| A contract, subscription or domain | Contracts (Management) |
+| A contract, subscription or domain | Contracts (Management): its dates and a link to the signed file; the terms stay in the file |
 | Pay, banking, loans, sensitive people matters | Management wiki |
 | A file (contract, offer, deck, spreadsheet, recording) | Company documents, linked from the record |
 | Numbers (invoices, revenue, metrics) | Their own system; the wiki says where |
@@ -330,7 +330,7 @@ The Template page body starts with the line `Artheon template record`, always in
 
 | Section | Lines |
 |---|---|
-| Version | `Template version 1.0. Setup started <date>.` (updates change the version) / `Language: <language>` / `Company setup done <date>` |
+| Version | `Template version <x>. Setup started <date>.` (updates change the version) / `Language: <language>` / `Company setup done <date>` |
 | Owner | `<Name> (<email>)` |
 | Answers | One line per answer, `<topic>: <answer>` |
 | Parts chosen and removed | `Business type: <code>` / `Modules: <list>` / `Kept: <part IDs>` / `Removed: <part IDs>` |

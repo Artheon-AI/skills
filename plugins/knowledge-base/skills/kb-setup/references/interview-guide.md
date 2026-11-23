@@ -13,7 +13,7 @@ Microsoft 365 has no simple equivalent; skip it there. When the owner shares eit
 ## S1 The record
 
 Before any question, fill the Template page (keep the line "Artheon template record" first, in English):
-- **Version:** `Template version 1.0. Setup started <date>.` Take the version from the Agent Instructions version line.
+- **Version:** `Template version <x>. Setup started <date>.` Take the version from the Agent Instructions version line.
 - **Owner:** the caller's name and email from `notion-get-self`.
 - **Setup steps:** the whole step list from SKILL.md as unticked to-dos.
 - **Parts map:** walk the copy (the handover page's children, the hubs' child pages, the part pages' databases and the personal space) and write one line per manifest part: `` `pg-direction` `` then a mention of the copy's page or database. Do it now, while titles match the master; translation and moves come later. A manifest part you cannot find gets "missing in the copy" and is rebuilt or noted before B1.

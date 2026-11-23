@@ -27,6 +27,14 @@ Each entry has:
 5. "This company" and "Company notes" are the company's: never touch them.
 6. Last, when every step is checked: move the Agent Instructions version line to the new version and date, change the Template page's "Template version" line to match, and write `<version> applied <date>` under Updates.
 
+## 1.1 (2026-11-23)
+
+**For people:** the "Where things go" row for contracts now says a Contracts record holds the dates and a link to the signed file, and the terms stay in the file. In walkthroughs, agents copied the key terms into the record's body.
+
+**Steps for agents:**
+1. In "How this base works" > "Where things go", replace the right-hand cell of the row "A contract, subscription or domain" with: `Contracts (Management): its dates and a link to the signed file; the terms stay in the file`. Done when the cell reads exactly that.
+2. Move the version line to `Template version 1.1, <date>` (step 6 above).
+
 ## 1.0 (2026-11-22)
 
 **For people:** the first release of Artheon's knowledge base template. A company duplicates the handover page and `kb-setup` sets it up: the company teamspace with the Home wiki, its seven hubs and the core databases (Projects, Meetings, Clients, People, Processes, Partners, Decisions, Ideas); the Management teamspace with its wiki, Contracts and Hiring; a personal space for each person; the project management module (Issues, Cycles, Milestones) and the CRM module (Deals); and the optional Proof, Equipment, Events and Goals.
