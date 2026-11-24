@@ -26,6 +26,7 @@ When two pages cover the same thing in the same space, keep the fuller or older 
 Look across the base at a high level: topics that keep growing without a page of their own, lists that have become a set of similar records, file-like material that belongs in Company documents, hubs that have grown crowded, and pages whose facts have gone stale.
 Make a change only when the improvement is clear and lasting; when unsure, leave it and mention it. For each change:
 - keep content and links intact, and every page findable from where it was;
+- give a new hub, area, database or top-level process one emoji icon, and other pages none;
 - record it: a Decisions row "Structure: <what changed>" with Area set to the hub, or a dated line under the owner's "Structure changes" for the personal space.
 Pages ticked "Requires edit approval" stay as they are; mention edits they seem to need.
 

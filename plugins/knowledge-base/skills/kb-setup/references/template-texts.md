@@ -1,6 +1,6 @@
 # Template texts
 
-The current English texts setup writes or checks, for template version 1.4. In a translated base, setup writes them in the base's language. Placeholders are in angle brackets.
+The current English texts setup writes or checks, for template version 1.5. In a translated base, setup writes them in the base's language. Placeholders are in angle brackets.
 
 Contents: version line; "How this base works"; Agent Instructions subpages; "This company"; text that depends on answers; formulas; descriptions; wiki properties; Home views and Databases pages; database templates; Agent Instructions - \<Name>; custom instructions block; task prompts; Template page lines.
 
@@ -127,7 +127,7 @@ Written at setup and kept by <Company>. Template updates leave this part alone.
 |---|---|---|---|---|
 | <database mention> | <what goes here, with the title rule> | `collection://<data source id>` | [<view>](https://app.notion.com/p/<database id>?v=<view id without dashes>), ... | <Template> `<template id>`, or None |
 
-Wikis: <Home - <Company> mention> (the company wiki; its top-level pages are the hubs below), <Management mention> (owners; Contracts sits inside it). The company databases sit under the Databases page, grouped as Work, Relationships and Operations. Each person's databases and their template IDs are in their own "Agent Instructions - <Name>".
+Wikis: <Home - <Company> mention> (the company wiki; its top-level pages are the hubs below), <Management mention> (owners; Contracts sits inside it). The company databases sit under the Databases page, inside its module pages Project management, CRM and Shared. Each person's databases and their template IDs are in their own "Agent Instructions - <Name>".
 
 ### Hubs
 
@@ -137,7 +137,7 @@ Wikis: <Home - <Company> mention> (the company wiki; its top-level pages are the
 
 | Moving part | Our system | What it holds | How agents reach it |
 |---|---|---|---|
-| Company documents | <e.g. Google Drive, shared drive "Company"> | Files | <connector> |
+| Company documents | <e.g. Google Drive: shared drives Company, Clients and Management> | Files | <connector> |
 
 ### Company notes
 
@@ -148,15 +148,15 @@ Rows of the databases table in the master, with their "What goes here" and main 
 
 | Database | What goes here | Main views | Template |
 |---|---|---|---|
-| Projects | Work being done; client work titled "Client - Deliverable" | In progress, Mine, Edited recently | Project |
+| Projects | Work being done; client work titled "Client - Deliverable" | All, Mine, Edited recently | Project |
 | Meetings | Meeting notes, "YYYY-MM-DD Topic - Counterparty" | Recent, Mine, Edited recently | Meeting, Retro |
-| Clients | Each client, a company or one person | Clients, Prospects, Watch, Renewals, Edited recently | Client |
-| People | People we work with and our team | Team, Org chart, By warmth, Connectors, All, Edited recently | Person |
+| Clients | Each client, a company or one person | All, Clients, Prospects, Watch, Renewals, Edited recently | Client |
+| People | People we work with and our team | All, Reach out, By warmth, Team, Connectors, Edited recently | Person |
 | Processes | Recurring work, titled as a verb phrase | Map, By owner, Proposed, Edited recently | Process |
 | Partners | Suppliers, subcontractors, vendors, referral partners | Active, Edited recently | Partner |
 | Decisions | Decisions, titled as the decision itself | Recent, Proposed, Edited recently | Decision |
 | Ideas | Ideas not being worked on | New, To raise again, Edited recently | None |
-| Issues | Work to do, one issue per piece, in its Project | Triage, Mine, Current cycle (Cycle board), Edited recently | Issue |
+| Issues | Work to do, one issue per piece, in its Project | All, Triage, Mine, Current cycle (Cycle board), Edited recently | Issue |
 | Cycles | Notion's sprints, used as cycles; Notion creates and closes them | Current cycle (Cycle board), All cycles | None |
 | Milestones | Points in a project with a target date | By project | None |
 | Deals | Each sales ask, upsell or renewal, "Person or Company - ask" | Today, Missing next step, Board, Gone quiet, Renewals and upsells, Won and lost, Edited recently | Deal |
@@ -171,7 +171,7 @@ Hub lines:
 - Company: direction, company card, story, glossary, legal and admin duties, the Company map (who owns what, all processes).
 - Customers and offer: offer and pricing, customers and market, brand and voice, marketing channels.
 - How we work: operating principles, service overviews; its processes.
-- People: handbook, learning; hiring, onboarding and offboarding processes.
+- Team: handbook, learning; hiring, onboarding and offboarding processes.
 - Money: finance rules and how money moves; the numbers live in their own systems.
 - Systems: how we use our tools, accounts and access.
 - AI: our AI setup, what people can add, factories and scheduled jobs.
@@ -211,6 +211,8 @@ Property references follow renames on their own; the quoted option names do not.
 
 - **Cycles:** "Notion's sprints, used as cycles: Notion creates, starts and closes them, and moves unfinished issues to the next one. Notion titles them "Sprint N". Never create or edit cycle pages; find the current one through the Current cycle view on the Cycle board."
 - **Deals' Stage** and **Issues' Status** descriptions name their options; rewrite them with the options.
+- **Clients' Contacts** (two-way, shown on People as **Client**): "The people we deal with at this client. Two-way: each person shows this client as Client; set either side." People's Client: "The client organisation this person works for. Two-way with Contacts on Clients; set either side."
+- **Notes** (personal): title rule "a Daily note's title is the date the Daily template sets"; Name: "What the note is about. Daily: the date the Daily template sets. Meeting: \"YYYY-MM-DD Topic - Counterparty\"."
 
 ## Wiki properties
 
@@ -220,30 +222,56 @@ Property references follow renames on their own; the quoted option names do not.
 
 ## Home views and Databases pages
 
-The wikis' Home views and the Databases pages, top to bottom. Headings are H2. Both Home views hold only headings, links, views and the `/kb-guide` line: no intro line under the title, no paragraph under a heading, no description after a link.
+The wikis' Home views, the Databases pages, the module pages and the hubs' Records, top to bottom. Headings are H2. These pages hold only headings, links, views and the `/kb-guide` line: no intro line under the title, no paragraph under a heading, no description after a link. The module pages are the one exception: one line on how the module works.
+
+**Compact views.** Every linked view in a tabs block (Homes, module pages, hubs, sprint pages) uses the List layout, shows the title and at most two properties, and hides the data source title.
+
+**Grouped lists.** Projects, Issues and Clients open on their "All" view: a list grouped by Status (Clients: by Stage) in Linear order, empty groups hidden, Done (Clients: Former) collapsed, Canceled hidden. The orders: Issues In progress, Todo, Backlog, Triage, Done; Projects In progress, Planned, Paused, Backlog, Done; Clients Client, Prospect, Former. The module tabs that group by status use the same order. Group order and collapsed groups are set in the app ([app-only steps](app-only-steps.md), A6).
 
 **Home - \<Company>** Home view:
 1. "Start here": mentions of Agent Instructions, the Company map and the People handbook, then the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something."
 2. "Knowledge hubs": the seven hubs' page blocks.
-3. "Databases": three columns, Work, Relationships and Operations, each a list of mentions of its databases (as on the Databases page).
-4. "Now": a tabs block with linked views: Projects in progress, Current cycle (a linked Issues board filtered to Cycle: Current, grouped by Status; project management), Deals today (CRM), Recent meetings, Recent decisions, Recently updated.
+3. "Modules": two columns, each a mention of one module page: Project management, CRM (only the modules this base has).
+4. "Databases": three columns, Project management, CRM and Shared, each a list of mentions of its databases (as on the Databases page).
+5. "At a glance": a tabs block with linked views: Projects in progress (Status In progress), Current cycle (a linked Issues list filtered to Cycle: Current, grouped by Status; project management), Deals today (CRM), Recent meetings, Recent decisions, Wiki edits (the company wiki, edited in the last week).
 
 No create buttons.
 
-**Databases** (company): one intro line, then the headings Work, Relationships and Operations with each kept database as a child database block under its heading:
-- Work: Projects, Issues, Cycle board, Cycles, Milestones, Goals.
-- Relationships: Clients, Deals, People, Partners, Proof.
-- Operations: Meetings, Decisions, Ideas, Processes, Equipment, Events.
+**Databases** (company): one intro line ("Every company database, in its module. Agents reach them by the IDs in Agent Instructions."), then three child pages, each holding its databases as child database blocks:
+- 📌 **Project management**: Projects, Issues, Cycle board, Cycles, Milestones, Goals.
+- 📇 **CRM**: Clients, Deals, People, Partners, Proof.
+- 📚 **Shared**: Meetings, Decisions, Ideas, Processes, Equipment, Events. A plain page, no text.
+
+**Module pages.** Each is one line, one tabs block, then its database blocks:
+- Project management: "Projects hold the work and Issues the pieces of it; each week's Issues run in a cycle on the Cycle board, which Notion starts and closes." Tabs: Current cycle (Issues, Cycle: Current, grouped by Status), Issues (grouped by Status), Projects (grouped by Status), Milestones (by Target date).
+- CRM: "Deals is the worklist, People the address book, Clients the organisations." Tabs: Pipeline (open Deals grouped by Stage), Reach out (People with Warmth Hot, Warm or Lukewarm, Roles not Team, Do not contact unticked), Clients (grouped by Stage), Partners (not Complete).
+
+Without a module, its page goes; databases that every base keeps (Projects; Clients, People, Partners, Proof) move to Shared first ([parts manifest](parts-manifest.md)).
+
+**Hub Records.** Each hub ends with "Records" and one tabs block of hub-filtered views, no bullets:
+- Company: Processes (Area Company, not Retired).
+- Customers and offer: Clients (grouped by Stage), Open deals (CRM), Public proof (with Proof), Processes.
+- How we work: Processes, Open issues (open Issues grouped by Project; project management).
+- Team: Team (People with Roles Team, not Former), Processes.
+- Money: Processes.
+- Systems: Processes.
+- AI: Ideas (Area AI, not Complete), Processes.
+
+**Sprint template** (Cycles' "New sprint"): one tabs block, This cycle (Issues whose Cycle is the template itself, grouped by Status; Notion points it at each new cycle) and No cycle (open Issues in no cycle), then Notion's "Planning notes" toggle.
 
 **Management** Home view: after its linked Contracts view (By cancel date), a "Records" heading holding the Contracts and Hiring database blocks.
 
 **Home - \<Name>** Home view:
 1. Two columns at the very top, no heading: on the left the "New capture" button (adds a Notes page with Type Capture, then opens it); on the right one plain line, "📅 Today's note: <mention of today's daily note>". A mention, not a view, so the nightly personal job can re-point it each day with one targeted edit; setup points it at the person's first daily note. In the master it reads "📅 Today's note:" with a grey placeholder, "set at setup, then each night".
-2. "Start here": a mention of Agent Instructions - \<Name> and the `/kb-guide` line.
-3. "Areas": the area page blocks.
+2. "Start here": mentions of Agent Instructions - \<Name> and Factories, then the `/kb-guide` line.
+3. "Areas": the area page blocks, each with one emoji. The master has one starter area, 🤖 AI, holding the person's **Factories** page (intro line, then "Scheduled jobs": a table Job, When, What it does, Where it runs); the 1:1 page shows here too.
 4. "My records": a tabs block with linked views: Captures, Active projects, Recent notes, Reading (when kept).
 
 **Databases** (personal): one intro line, then Notes, Projects, Reading, People and Tasks, whichever the person keeps, as child database blocks.
+
+**Factories** (company, under the AI hub): "The company's factories, then the company's scheduled jobs. Each person's own jobs, such as their personal nightly job, are on the Factories page under the AI area of their Home."
+
+**Icons.** Emoji only on each space's root items, wikis, hubs and personal areas, databases, module pages and Shared, and top-level processes. Every other page and row has none.
 
 ## Database templates
 
@@ -282,7 +310,8 @@ Read after the company Agent Instructions whenever you work for <Name>. <Name> e
 
 - <Home - <Name> mention>: my wiki and home page; its top-level pages are my areas.
 - <Databases mention>: the page that holds my databases below.
-- <Notes mention>: captures, notes, daily notes, resources, private meetings. The nightly job creates each day's note from the Daily template and links it from Home - <Name>, so find today's note (Type Daily, Date today) rather than creating one; only the nightly job creates daily notes. When you create a note, set its Daily note to today's daily note; the daily note lists the notes linked to it. Views: Captures, Recent, Daily, By day, Resources, Meetings, Edited recently. Templates: Daily `<id>`, Meeting `<id>`; a capture needs none.
+- <Notes mention>: captures, notes, daily notes, resources, private meetings. The nightly job creates each day's note from the Daily template and links it from Home - <Name>, so find today's note (Type Daily, Date today) rather than creating one; only the nightly job creates daily notes. When you create a note, set its Daily note to today's daily note; the daily note lists the notes linked to it. Views: By day, Captures, Daily, Resources, Meetings, Edited recently. Templates: Daily `<id>`, Meeting `<id>`; a capture needs none.
+- <Factories mention> (under the AI area of Home - <Name>): my scheduled jobs, one line each. A job of mine is listed here, never on the company's Factories page.
 - 1:1 pages (copies of <1:1 - Name mention>, under Home - <Name>): one running page per person I meet one to one, shared with them. (Managers.)
 - <Projects mention>: my personal projects. Template: Project `<id>`. (Owners; optional for others.)
 - <Reading mention>: books I read or want to read. (Optional.)

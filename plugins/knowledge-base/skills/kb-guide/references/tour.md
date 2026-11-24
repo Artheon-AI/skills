@@ -10,10 +10,10 @@ The tour shows the person their own base: you fetch each stop with the Notion to
 
 ## Route
 
-1. **Home - <Company>.** Walk the Home view top to bottom: Start here, Knowledge hubs, Databases, Now. Point out that the Now tabs are live views, not copies.
-2. **One hub.** Pick the hub that fits the person's role (Customers and offer for sales, How we work for delivery, Company for an owner). Show two or three of its pages, their Status, and its Records views.
-3. **Databases.** Open the Databases page and one database the person will use most. Switch between two of its named views and show how a filter changes what you see, never the data. Open one record: pinned properties at the top, relation tabs, template headings.
-4. **Their personal space.** Home - <Name>: the New capture button and the link to today's daily note side by side at the top, then Start here, Areas and the My records tabs. Open today's daily note and show "Notes that day" at its end. Then the Databases page and the Notes Captures view. Mention Open on start, their own setting ([structure.md](structure.md), "Personal space").
+1. **Home - <Company>.** Walk the Home view top to bottom: Start here, Knowledge hubs, Modules, Databases, At a glance. Point out that the tabs are live views, not copies.
+2. **One hub.** Pick the hub that fits the person's role (Customers and offer for sales, How we work for delivery, Company for an owner). Show two or three of its pages, their Status, and its Records tabs.
+3. **Databases.** Open the module page the person will use most (Project management for delivery, CRM for sales) and its tabs. Then open one database from it. Switch between two of its named views and show how a filter changes what you see, never the data. Open one record: pinned properties at the top, relation tabs, template headings.
+4. **Their personal space.** Home - <Name>: the New capture button and the link to today's daily note side by side at the top, then Start here, Areas (with Factories, their own scheduled jobs, in the AI area) and the My records tabs. Open today's daily note and show "Notes that day" at its end. Then the Databases page and the Notes Captures view. Mention Open on start, their own setting ([structure.md](structure.md), "Personal space").
 5. **Agent Instructions.** Show "Where things go" and "Ask first" on the company page, and "About me" on their own page. Suggest they keep "Now" current, since their agent reads it every conversation.
 
 Check in after each stop; the person may want to linger on one or skip the rest.

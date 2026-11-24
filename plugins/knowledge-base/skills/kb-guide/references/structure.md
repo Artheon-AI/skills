@@ -19,45 +19,50 @@ Open to every member. Its top level holds exactly three items, in this order:
 1. **Home - <Company>**: the company wiki; its top-level pages are the seven hubs. Its Home view is the front door, top to bottom:
    - **Start here**: Agent Instructions, Notion basics (where the base has one), the Company map, the People handbook, and the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something.";
    - **Knowledge hubs**: the seven hubs;
-   - **Databases**: three columns, Work, Relationships and Operations, each listing its databases;
-   - **Now**: tabs with live views: Projects in progress, Current cycle (with project management), Deals today (with the CRM), Recent meetings, Recent decisions, Recently updated.
+   - **Modules**: two columns linking the module pages, Project management and CRM (those the base has);
+   - **Databases**: three columns, Project management, CRM and Shared, each listing its databases;
+   - **At a glance**: tabs with compact live lists: Projects in progress, Current cycle (with project management), Deals today (with the CRM), Recent meetings, Recent decisions, Wiki edits.
    It holds only headings, links, live views and the `/kb-guide` line, with no intro or description lines, and no create buttons: records start in their database.
-2. **Databases**: a plain page, not a wiki. One intro line, then every company database under three headings: Work, Relationships, Operations.
+2. **Databases**: a plain page, not a wiki. One intro line, then three pages that hold the databases:
+   - **Project management** (module page): one line on how it works, tabs Current cycle, Issues, Projects, Milestones, then Projects, Issues, Cycle board, Cycles, Milestones (and Goals).
+   - **CRM** (module page): one line ("Deals is the worklist, People the address book, Clients the organisations."), tabs Pipeline, Reach out, Clients, Partners, then Clients, Deals, People, Partners, Proof.
+   - **Shared**: Meetings, Decisions, Ideas, Processes (and Equipment, Events).
+   A base without a module has no page for it; its everyday databases sit in Shared.
 3. **Agent Instructions**: the map of the base for agents and curious people. Locked: everyone reads it, the owner edits it.
 
 ## The seven hubs
 
-The top-level pages of the company wiki. Each holds the wiki pages on its topic and a "Records" part with linked views of related databases. Pages marked (approval) have Requires edit approval ticked.
+The top-level pages of the company wiki. Each holds the wiki pages on its topic and ends with "Records": one tabs block of lists filtered to the hub. Pages marked (approval) have Requires edit approval ticked.
 
 | Hub | Main pages | Records |
 |---|---|---|
 | Company | Direction (approval, with "Now": this quarter's priorities), Company card, Story, Glossary, Legal and admin duties, Company map ("Who owns what" and "All processes") | Processes with Area Company |
-| Customers and offer | Offer and pricing (approval), Customers and market, Brand and voice, Marketing channels | Active clients, Proof |
-| How we work | Operating principles (approval), service overviews | Processes, Projects, Meetings, Decisions |
-| People | People handbook, Learning (optional) | The team in People, Processes with Area People |
+| Customers and offer | Offer and pricing (approval), Customers and market, Brand and voice, Marketing channels | Clients by stage, Open deals, Public proof, Processes |
+| How we work | Operating principles (approval), service overviews | Processes, Open issues by project |
+| Team | People handbook, Learning (optional) | The team in People, Processes with Area Team |
 | Money | Finance rules (approval), How money moves, KPI definitions | Processes with Area Money; the numbers stay in their own systems |
-| Systems | How we use our tools, Accounts and access | Links to the systems map in Agent Instructions |
-| AI | AI setup, Getting more, Factories (every automation and scheduled job) | Ideas with Area AI |
+| Systems | How we use our tools, Accounts and access | Processes with Area Systems; the systems map is in Agent Instructions |
+| AI | AI setup, Getting more, Factories (the company's automations and scheduled jobs) | Ideas with Area AI, Processes |
 
 ## Company databases
 
-Grouped as on the Databases page.
+Grouped as on the Databases page. Projects, Issues and Clients open on "All", a list grouped by Status (Clients: Stage) in Linear order: In progress first, Done collapsed, Canceled hidden.
 
-**Work**
+**Project management**
 
-- **Projects**: work being done; client work titled "Client - Deliverable". Status Backlog, Planned, In progress, Paused, Done, Canceled. Views In progress, Mine, Edited recently.
-- With project management: **Issues** (the tasks inside projects, with their own ID such as ART-12), **Cycle board** and **Cycles** (Notion sprints, run automatically), and **Milestones**.
+- **Projects**: work being done; client work titled "Client - Deliverable". Status Backlog, Planned, In progress, Paused, Done, Canceled. Views All, Mine, Edited recently.
+- With project management: **Issues** (the tasks inside projects, with their own ID such as ART-12), the **Cycle board** (Notion's sprint board over Issues: Current cycle is the daily view, Cycle planning, and No cycle for open issues in no cycle), **Cycles** (the list of sprints, which Notion creates and closes) and **Milestones**.
 - Optional: **Goals**.
 
-**Relationships**
+**CRM**
 
-- **Clients**: Stage Prospect, Client, Former.
+- **Clients**: Stage Prospect, Client, Former. Contacts lists the people there; each person shows the client as Client. A client page has tabs Content, Projects, Meetings, Contacts and Deals.
 - With the CRM: **Deals**, each sales ask titled "Person or Company - ask", with a Stage and a Next step.
-- **People**: the team and the people the company works with. Role Team, Client contact, Partner contact, Investor, Advisor. Views Team, Org chart, All.
+- **People**: the team and the people the company works with. Role Team, Client contact, Partner contact, Investor, Advisor. Views All, Reach out (who to contact next), By warmth, Team, Connectors. The org chart is on the Company map.
 - **Partners**: suppliers, subcontractors, vendors, referral partners.
 - **Proof**: quotes, case studies, reviews and results (service firms; optional for others).
 
-**Operations**
+**Shared**
 
 - **Meetings**: titled "YYYY-MM-DD Topic - Counterparty"; Type Internal, Client, Partner, Sales or Retro; a Summary, with recording and transcript linked from Drive. Templates Meeting and Retro.
 - **Decisions**: titled as the decision itself. Status Proposed, Accepted, Superseded. "Governs" links the wiki page it changes.
@@ -73,12 +78,12 @@ Each person's Private section mirrors the company teamspace: exactly three items
 
 1. **Home - <Name>**: the personal wiki; its top-level pages are the person's areas, and managers keep their 1:1 pages here too (one running page per report, shared with that person). Its Home view is the person's Notion home, top to bottom, with the same plain style as the company Home:
    - side by side at the very top: the **New capture** button (adds a Notes page with Type Capture and opens it) and **📅 Today's note**, a link to today's daily note;
-   - **Start here**: Agent Instructions - <Name> and the `/kb-guide` line;
-   - **Areas**: the area pages;
+   - **Start here**: Agent Instructions - <Name>, Factories and the `/kb-guide` line;
+   - **Areas**: the area pages, each with an emoji. The AI area holds **Factories**, the person's own scheduled jobs (their nightly job included); the company's Factories page lists company jobs only;
    - **My records**: tabs with Captures, Active projects, Recent notes, and Reading when kept.
 2. **Agent Instructions - <Name>**: "About me" (who I am, current focus, how I work, how to talk to me) and "My space" (the person's pages and databases, template IDs, their conventions, and dated "Structure changes" lines from the weekly job). The person edits it.
 3. **Databases**: a plain page with the person's databases:
-   - **Notes**: captures, notes, daily notes, resources and private meetings, told apart by Type. Views Captures, Recent, Daily, By day, Resources, Meetings, Edited recently. **Daily note** links a note to the daily note of the day it was created.
+   - **Notes**: captures, notes, daily notes, resources and private meetings, told apart by Type. Views By day (first), Captures, Daily, Resources, Meetings, Edited recently. **Daily note** links a note to the daily note of the day it was created.
    - **Projects**: personal projects (owners; optional for others).
    - **Reading**: books read or to read (optional).
    - **People**: private contacts, family and friends; business contacts go to the company's People (optional).
@@ -113,7 +118,7 @@ The company Agent Instructions page has the full, current table; use it first. T
 | A person / a supplier | People / Partners |
 | A contract, subscription or domain | Contracts, in Management |
 | Pay, banking, sensitive people matters | The Management wiki |
-| A file | The company's file storage, linked from the record |
+| A file | The company's file storage (in the template: shared drives Company, Clients and Management), linked from the record |
 | Numbers (invoices, revenue, metrics) | Their own system; the wiki says where |
 | A private meeting or 1:1 | The person's Notes, or the 1:1 page |
 | Own thinking, notes, plans, learning | The person's Private section |

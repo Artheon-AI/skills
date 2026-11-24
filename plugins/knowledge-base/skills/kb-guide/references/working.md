@@ -20,7 +20,7 @@
 
 **Create a record.** Open the database (from the Databases page or a hub's Records), click New, pick the template, give it a title by the database's rule, and fill the properties pinned at the top. Relations are optional; agents add missing ones later.
 
-**Read through hubs and views.** Start at Home - <Company>, open a hub, read its pages and look at its Records. Use the Now tabs for what is live, "Edited recently" for what changed this week, and a page's backlinks to see where it is mentioned. Inside a database, switch between its named views rather than building your own filter each time.
+**Read through hubs and views.** Start at Home - <Company>, open a hub, read its pages and look at its Records. Use the At a glance tabs for what is live, the module pages (Project management, CRM) for daily work, "Edited recently" for what changed this week, and a page's backlinks to see where it is mentioned. Inside a database, switch between its named views rather than building your own filter each time.
 
 **Find something.** Notion search matches titles best: try likely titles and the "Also known as" names. If search misses, open the database and use its views. Or ask an agent: it searches the same way and reads the views for you.
 
@@ -61,6 +61,6 @@ Every agent edit shows in Notion as the connected person, and page history keeps
 
 ## Modules
 
-**Project management** (if chosen): Issues are the tasks inside Projects, with Status Triage, Backlog, Todo, In progress, Done, Canceled, plus owner, due date, priority, estimate, milestone, cycle, sub-issues and "Blocked by". Views Triage, Mine, Current cycle. Issues raised by outsiders, or by agents unasked, start in Triage. The page "Project management for agents" under Agent Instructions holds the rules.
+**Project management** (if chosen): Issues are the tasks inside Projects, with Status Triage, Backlog, Todo, In progress, Done, Canceled, plus owner, due date, priority, estimate, milestone, cycle, sub-issues and "Blocked by". Views All (grouped by status), Triage, Mine, Current cycle; the Project management page shows the current cycle, issues, projects and milestones as tabs. Issues raised by outsiders, or by agents unasked, start in Triage. The page "Project management for agents" under Agent Instructions holds the rules.
 
-**CRM** (if chosen): Deals track each sales ask through Stage (To contact, Contacted, Talking, Call booked, Proposal, Won, Lost, Parked) with a Next step and its date. Views Today, Missing next step, Board, Gone quiet, Renewals and upsells, Won and lost. Agents draft emails and never send them; Won, Lost and Do not contact are set by a person. The `sales` plugin adds daily outreach and a weekly sales review. "Sales for agents" holds the rules.
+**CRM** (if chosen): Deals track each sales ask through Stage (To contact, Contacted, Talking, Call booked, Proposal, Won, Lost, Parked) with a Next step and its date. Views Today, Missing next step, Board, Gone quiet, Renewals and upsells, Won and lost; the CRM page shows the pipeline, who to reach out to, clients and partners as tabs. Agents draft emails and never send them; Won, Lost and Do not contact are set by a person. The `sales` plugin adds daily outreach and a weekly sales review. "Sales for agents" holds the rules.

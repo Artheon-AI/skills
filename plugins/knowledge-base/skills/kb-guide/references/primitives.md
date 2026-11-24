@@ -37,7 +37,7 @@ Doc: https://www.notion.com/help/wikis-and-verified-pages
 
 ## Hub
 
-Not a Notion feature: the name this base gives to the seven top-level pages of the company wiki (Company, Customers and offer, How we work, People, Money, Systems, AI). Each hub collects the wiki pages on its topic and shows the related records through views. See [structure.md](structure.md).
+Not a Notion feature: the name this base gives to the seven top-level pages of the company wiki (Company, Customers and offer, How we work, Team, Money, Systems, AI). Each hub collects the wiki pages on its topic and shows the related records through views. See [structure.md](structure.md).
 
 ## Database and data source
 
@@ -68,7 +68,7 @@ Doc: https://www.notion.com/help/views-filters-and-sorts
 
 ## Linked views
 
-A view of a database placed on another page. The rows stay in their database; the page only shows them. This base uses them a lot: the live views on the Home pages, the "Records" on each hub (for example Processes filtered to the hub's Area), and the Company map.
+A view of a database placed on another page. The rows stay in their database; the page only shows them. This base uses them a lot: the live views on the Home pages, the module pages, the "Records" tabs on each hub (for example Processes filtered to the hub's Area), and the Company map. Inside tabs they are compact lists: the title and at most two properties.
 
 Doc: https://www.notion.com/help/data-sources-and-linked-databases
 
