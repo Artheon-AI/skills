@@ -154,4 +154,6 @@ For a fresh company the recommended layout is shared drives Company, Clients and
 
 Move `part-personal` under the Template page with `notion-move-pages`. It stays there as the template every person duplicates (per-person step P3); it is not anyone's own space.
 
-Done when a fetch of the Template page shows the personal space as its child.
+Leave its daily-note parts as the master has them: the Daily template in Notes has no repeat, Notes holds no daily notes, and Home - \<Name>'s "📅 Today's note:" line keeps its grey placeholder. Each person's first daily note and the link to it are made in P3; the nightly personal job makes the rest.
+
+Done when a fetch of the Template page shows the personal space as its child, and its Home - \<Name> still has the placeholder line.

@@ -238,7 +238,7 @@ No create buttons.
 **Management** Home view: after its linked Contracts view (By cancel date), a "Records" heading holding the Contracts and Hiring database blocks.
 
 **Home - \<Name>** Home view:
-1. Two columns at the very top, no heading: on the left the "New capture" button (adds a Notes page with Type Capture, then opens it); on the right "Today", a linked list view of Notes filtered to Type Daily and Date is today, showing Name only: one row, today's daily note.
+1. Two columns at the very top, no heading: on the left the "New capture" button (adds a Notes page with Type Capture, then opens it); on the right one plain line, "📅 Today's note: <mention of today's daily note>". A mention, not a view, so the nightly personal job can re-point it each day with one targeted edit; setup points it at the person's first daily note. In the master it reads "📅 Today's note:" with a grey placeholder, "set at setup, then each night".
 2. "Start here": a mention of Agent Instructions - \<Name> and the `/kb-guide` line.
 3. "Areas": the area page blocks.
 4. "My records": a tabs block with linked views: Captures, Active projects, Recent notes, Reading (when kept).
@@ -262,7 +262,7 @@ Sections are H2 headings, each with a one-line grey hint where the master has on
 | Issues | Issue | What to do; Done when (one empty to-do); Links; Progress ("One short line, updated as work moves."). Status Backlog |
 | Deals | Deal | Ask; Context; Touches ("One dated line per touch, newest last. Set Last touch to match."); Outcome |
 | Hiring | Candidate | Role; Notes; Decision |
-| Notes | Daily | Title "@Today" (typed in the app: `@today` > "Today - Date when duplicated"). Personal (empty to-do); Work (empty to-do); Notes > ### Agent ("Agents write here; the rest of the page is yours."), then ### \<Name> (setup writes the person's name); "Notes that day": a linked list view of Notes filtered to Daily note contains the template itself (Name, Type; oldest first), which Notion points at each new daily note. Type Daily, Date "Today". In each person's copy it repeats every day, Around midnight (P3); the master's does not repeat |
+| Notes | Daily | Title "@Today" (typed in the app: `@today` > "Today - Date when duplicated"). Personal (empty to-do); Work (empty to-do); Notes > ### Agent ("Agents write here; the rest of the page is yours."), then ### \<Name> (setup writes the person's name); "Notes that day": a linked list view of Notes filtered to Daily note contains the template itself (Name, Type; oldest first), which Notion points at each new daily note. Type Daily, Date "Today". No repeat, in the master or any copy: setup makes the person's first daily note from it, and the nightly personal job makes each day's note after that |
 | Notes | Meeting | The company Meeting sections. Type Meeting, Date "Today" |
 | Projects (personal) | Project | Outcome; Current state; Next actions (one empty to-do) |
 
@@ -282,7 +282,7 @@ Read after the company Agent Instructions whenever you work for <Name>. <Name> e
 
 - <Home - <Name> mention>: my wiki and home page; its top-level pages are my areas.
 - <Databases mention>: the page that holds my databases below.
-- <Notes mention>: captures, notes, daily notes, resources, private meetings. The repeating Daily template creates each day's note shortly after midnight, so find today's note rather than creating one. When you create a note, set its Daily note to today's daily note; the daily note lists the notes linked to it. Views: Captures, Recent, Daily, By day, Resources, Meetings, Edited recently. Templates: Daily `<id>`, Meeting `<id>`; a capture needs none.
+- <Notes mention>: captures, notes, daily notes, resources, private meetings. The nightly job creates each day's note from the Daily template and links it from Home - <Name>, so find today's note (Type Daily, Date today) rather than creating one; only the nightly job creates daily notes. When you create a note, set its Daily note to today's daily note; the daily note lists the notes linked to it. Views: Captures, Recent, Daily, By day, Resources, Meetings, Edited recently. Templates: Daily `<id>`, Meeting `<id>`; a capture needs none.
 - 1:1 pages (copies of <1:1 - Name mention>, under Home - <Name>): one running page per person I meet one to one, shared with them. (Managers.)
 - <Projects mention>: my personal projects. Template: Project `<id>`. (Owners; optional for others.)
 - <Reading mention>: books I read or want to read. (Optional.)

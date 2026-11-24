@@ -68,7 +68,7 @@ Doc: https://www.notion.com/help/views-filters-and-sorts
 
 ## Linked views
 
-A view of a database placed on another page. The rows stay in their database; the page only shows them. This base uses them a lot: the live views on the Home pages, the "Records" on each hub (for example Processes filtered to the hub's Area), the Company map, and today's daily note on the personal Home.
+A view of a database placed on another page. The rows stay in their database; the page only shows them. This base uses them a lot: the live views on the Home pages, the "Records" on each hub (for example Processes filtered to the hub's Area), and the Company map.
 
 Doc: https://www.notion.com/help/data-sources-and-linked-databases
 
@@ -84,7 +84,7 @@ Rows nested under other rows of the same database: People under the person they 
 
 ## Database templates and repeating templates
 
-A database template is a ready-made page shape you pick from a database's New button: for example, the Meeting template's headings. Sections are headings with grey hints. A **repeating template** creates a new page on a schedule: each person's daily note is made every day around midnight from the Daily template in their Notes, titled with the date. Each person turns the repeat on in their own copy, in the Notion app.
+A database template is a ready-made page shape you pick from a database's New button: for example, the Meeting template's headings. Sections are headings with grey hints. A **repeating template** creates a new page on a schedule. This base leaves the repeat off: the nightly personal job makes each daily note from the Daily template instead, because it also re-points the link on Home - <Name>, which a repeat or a button cannot do.
 
 A template can hold a linked view filtered on the template itself; Notion points it at each new page. That is how a daily note's "Notes that day" lists the notes whose Daily note is that day, and how a process page's "This branch" lists its sub-processes.
 

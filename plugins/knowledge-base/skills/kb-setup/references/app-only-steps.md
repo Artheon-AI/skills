@@ -109,8 +109,8 @@ Moving a page into someone's Private section is an app step. `notion-move-pages`
 
 Per person, in P3, signed in as that person.
 
-- **New capture button** in the left column at the top of Home - \<Name>, beside the Today view: press it. It should open a new page with Type Capture in this person's own Notes (the breadcrumb shows their Databases > Notes). If it adds to another Notes, or is missing, rebuild it in that left column: `/button` > name "New capture" > Do: "Add page to..." > the person's Notes, Type Capture > add "Open page, form, or URL" > the page added in step 1 > Done. Buttons are app-only. Check: the test page is in the Captures view; trash it.
-- **Daily repeat:** Notes > New dropdown > Daily "..." > Edit. In the template's banner: "Duplicate every..." > Day, then Edit cadence: Every 1 Day, At "Around midnight", Starting Tomorrow, Ending Never, the person's timezone > Save. The MCP cannot set it. Check the next day: Notes holds a Type Daily row with today's Date, titled with the date, and it is the one row in the Today view at the top of Home - \<Name>.
+- **New capture button** in the left column at the top of Home - \<Name>, beside the "Today's note" line: press it. It should open a new page with Type Capture in this person's own Notes (the breadcrumb shows their Databases > Notes). If it adds to another Notes, or is missing, rebuild it in that left column: `/button` > name "New capture" > Do: "Add page to..." > the person's Notes, Type Capture > add "Open page, form, or URL" > the page added in step 1 > Done. Buttons are app-only. Check: the test page is in the Captures view; trash it.
+- **Daily template without a repeat:** Notes > New dropdown > Daily "..." shows "Duplicate every... Off". If it shows a cadence, open it and choose Cancel recurrence: the nightly personal job makes each day's note, and a repeat would make a second one.
 
 ## Open on start
 

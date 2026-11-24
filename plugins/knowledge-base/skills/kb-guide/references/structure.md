@@ -72,7 +72,7 @@ Most databases have an "Edited recently" view and a template of the same name as
 Each person's Private section mirrors the company teamspace: exactly three items at its root, in this order. Any other private page sits under Home - <Name> or Databases.
 
 1. **Home - <Name>**: the personal wiki; its top-level pages are the person's areas, and managers keep their 1:1 pages here too (one running page per report, shared with that person). Its Home view is the person's Notion home, top to bottom, with the same plain style as the company Home:
-   - side by side at the very top: the **New capture** button (adds a Notes page with Type Capture and opens it) and **Today**, a one-row view of today's daily note;
+   - side by side at the very top: the **New capture** button (adds a Notes page with Type Capture and opens it) and **📅 Today's note**, a link to today's daily note;
    - **Start here**: Agent Instructions - <Name> and the `/kb-guide` line;
    - **Areas**: the area pages;
    - **My records**: tabs with Captures, Active projects, Recent notes, and Reading when kept.
@@ -84,7 +84,7 @@ Each person's Private section mirrors the company teamspace: exactly three items
    - **People**: private contacts, family and friends; business contacts go to the company's People (optional).
    - **Tasks**: the person's own to-do list (optional).
 
-**Daily notes.** The Daily template in Notes repeats every day around midnight, so today's note exists before the person opens Home - <Name>; nobody creates daily notes by hand. The template's title "@Today" makes each note's title its date, shown in the person's date format. Each daily note ends with "Notes that day", a list of the notes whose Daily note points at it: agents set Daily note when they create a note, and the nightly job fills it for notes made that day. The nightly job moves past daily notes nobody wrote in to Trash, unless other notes were made that day. The "By day" view groups Notes by Date, one group per day, newest first.
+**Daily notes.** The nightly personal job (around 01:00) makes each day's note from the Daily template in Notes and points the "📅 Today's note" link on Home - <Name> at it, so today's note exists before the person opens Home; nobody creates daily notes by hand. The template does not repeat: a Notion button cannot open "today's" page, so the job keeps a plain link up to date instead. The template's title "@Today" makes each note's title its date, shown in the person's date format. Each daily note ends with "Notes that day", a list of the notes whose Daily note points at it: agents set Daily note when they create a note, and the nightly job fills it for notes made that day. The nightly job moves yesterday's daily note to Trash when nobody touched it after it was made and no notes link to it; every other daily note stays. The "By day" view groups Notes by Date, one group per day, newest first.
 
 **Open on start** is each person's own setting: Settings > Preferences > Open on start > "Top page in sidebar" opens Home - <Name> when it is the first page of the Private section and the person has no Favorites.
 
