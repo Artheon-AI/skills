@@ -220,14 +220,13 @@ Property references follow renames on their own; the quoted option names do not.
 
 ## Home views and Databases pages
 
-The wikis' Home views and the Databases pages, top to bottom. Headings are H2.
+The wikis' Home views and the Databases pages, top to bottom. Headings are H2. Both Home views hold only headings, links, views and the `/kb-guide` line: no intro line under the title, no paragraph under a heading, no description after a link.
 
 **Home - \<Company>** Home view:
-1. One line on what the base is.
-2. "Start here": mentions of Agent Instructions, the Company map and the People handbook (onboarding), then the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something."
-3. "Knowledge hubs": the seven hubs' page blocks.
-4. "Databases": three columns, Work, Relationships and Operations, each a list of mentions of its databases (as on the Databases page).
-5. "Now": a tabs block with linked views: Projects in progress, Current cycle (a linked Issues board filtered to Cycle: Current, grouped by Status; project management), Deals today (CRM), Recent meetings, Recent decisions, Recently updated.
+1. "Start here": mentions of Agent Instructions, the Company map and the People handbook, then the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something."
+2. "Knowledge hubs": the seven hubs' page blocks.
+3. "Databases": three columns, Work, Relationships and Operations, each a list of mentions of its databases (as on the Databases page).
+4. "Now": a tabs block with linked views: Projects in progress, Current cycle (a linked Issues board filtered to Cycle: Current, grouped by Status; project management), Deals today (CRM), Recent meetings, Recent decisions, Recently updated.
 
 No create buttons.
 
@@ -239,12 +238,10 @@ No create buttons.
 **Management** Home view: after its linked Contracts view (By cancel date), a "Records" heading holding the Contracts and Hiring database blocks.
 
 **Home - \<Name>** Home view:
-1. One line on what the space is.
+1. Two columns at the very top, no heading: on the left the "New capture" button (adds a Notes page with Type Capture, then opens it); on the right "Today", a linked list view of Notes filtered to Type Daily and Date is today, showing Name only: one row, today's daily note.
 2. "Start here": a mention of Agent Instructions - \<Name> and the `/kb-guide` line.
-3. A "New capture" button: adds a Notes page with Type Capture, then opens it.
-4. "Today": a linked list view of Notes, Created time is today, oldest first (today's daily note and the notes created today).
-5. "Areas": the area page blocks.
-6. "My records": a tabs block with linked views: Captures, Active projects, Recent notes, Reading (when kept).
+3. "Areas": the area page blocks.
+4. "My records": a tabs block with linked views: Captures, Active projects, Recent notes, Reading (when kept).
 
 **Databases** (personal): one intro line, then Notes, Projects, Reading, People and Tasks, whichever the person keeps, as child database blocks.
 
@@ -265,7 +262,7 @@ Sections are H2 headings, each with a one-line grey hint where the master has on
 | Issues | Issue | What to do; Done when (one empty to-do); Links; Progress ("One short line, updated as work moves."). Status Backlog |
 | Deals | Deal | Ask; Context; Touches ("One dated line per touch, newest last. Set Last touch to match."); Outcome |
 | Hiring | Candidate | Role; Notes; Decision |
-| Notes | Daily | Title "@Today" (typed in the app: `@today` > "Today - Date when duplicated"). Personal (empty to-do); Work (empty to-do); Notes > ### Agent ("Agents write here; the rest of the page is yours."), then ### \<Name> (setup writes the person's name). Type Daily, Date "Today". In each person's copy it repeats every day, Around midnight (P3); the master's does not repeat |
+| Notes | Daily | Title "@Today" (typed in the app: `@today` > "Today - Date when duplicated"). Personal (empty to-do); Work (empty to-do); Notes > ### Agent ("Agents write here; the rest of the page is yours."), then ### \<Name> (setup writes the person's name); "Notes that day": a linked list view of Notes filtered to Daily note contains the template itself (Name, Type; oldest first), which Notion points at each new daily note. Type Daily, Date "Today". In each person's copy it repeats every day, Around midnight (P3); the master's does not repeat |
 | Notes | Meeting | The company Meeting sections. Type Meeting, Date "Today" |
 | Projects (personal) | Project | Outcome; Current state; Next actions (one empty to-do) |
 
@@ -285,7 +282,7 @@ Read after the company Agent Instructions whenever you work for <Name>. <Name> e
 
 - <Home - <Name> mention>: my wiki and home page; its top-level pages are my areas.
 - <Databases mention>: the page that holds my databases below.
-- <Notes mention>: captures, notes, daily notes, resources, private meetings. The repeating Daily template creates each day's note, so find today's note rather than creating one. Views: Captures, Recent, Daily, By day, Resources, Meetings, Edited recently. Templates: Daily `<id>`, Meeting `<id>`; a capture needs none.
+- <Notes mention>: captures, notes, daily notes, resources, private meetings. The repeating Daily template creates each day's note shortly after midnight, so find today's note rather than creating one. When you create a note, set its Daily note to today's daily note; the daily note lists the notes linked to it. Views: Captures, Recent, Daily, By day, Resources, Meetings, Edited recently. Templates: Daily `<id>`, Meeting `<id>`; a capture needs none.
 - 1:1 pages (copies of <1:1 - Name mention>, under Home - <Name>): one running page per person I meet one to one, shared with them. (Managers.)
 - <Projects mention>: my personal projects. Template: Project `<id>`. (Owners; optional for others.)
 - <Reading mention>: books I read or want to read. (Optional.)

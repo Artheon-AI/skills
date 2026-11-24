@@ -15,9 +15,9 @@ Fetch the company Agent Instructions and, for a Personal run, the person's Agent
 
 ## 3. Past daily notes (Personal)
 Query Notes for rows with Type Daily and a Date before today, and fetch the Daily template (its ID is in Agent Instructions - <Name>) to compare.
-- A note that still holds only the template (body and properties as the template left them, nothing added) moves to Trash with `notion-delete-pages`.
+- A note that still holds only the template (body and properties as the template left them, nothing added) moves to Trash with `notion-delete-pages`, unless other Notes pages were created on its day: keep that one, because step 5 links them to it and it lists them.
 The repeating Daily template creates each day's note; this job never creates one.
-Done when no past daily note holds only the template or keeps a date-mention title.
+Done when every past daily note still holding only the template has no other Notes pages created on its day.
 
 ## 4. Collect the night's pages
 - Personal: every row of the Notes "Captures" view.
@@ -29,6 +29,7 @@ Done when every candidate page is fetched.
 ## 5. File each page
 Leave a page that already fits. Otherwise:
 - Captures (Personal): a capture that is clearly company material moves into the right company database with `notion-move-pages` (notes from a company meeting become a Meetings row, a new lead a Deal or People row). The move keeps the body and drops the Notes properties, so then set the new row's title by that database's rule, its properties and its links. Every other capture stays here: set Type (Note, Daily, Resource, Meeting), Area and Project, a title by the rule if it has none, and links to the company records it mentions. Daily notes stay private, their Work part included.
+- Daily note (Personal): on every Notes page that is not itself a daily note and has an empty Daily note, set it to the daily note of the day the page was created (Type Daily, Date that day), for today and past days alike. When that day has no daily note, leave it empty: never create a daily note to fill it.
 - Properties: fill the empty ones from the page and its context; values a person set stay.
 - Records (Company): create the Meeting, Person, Client or Partner a new page clearly describes, with its template ID, and link it.
 - Relations and Related: fill missing relations. For notes, wiki pages, ideas and project documents, look a little around (the page's client, project and people, pages on the same topic, what links to it) and add the few pages a reader would follow next to the "Related" list at the bottom. Keep its existing entries; skip the parent and the hub.
@@ -37,7 +38,7 @@ Leave a page that already fits. Otherwise:
 On a big night, file the oldest pages first and leave the rest for the next run.
 
 ## 6. Boundaries
-- Personal: work in the Private section. Company databases receive only the captures moved in step 4, and a moved page keeps no links into the Private section.
+- Personal: work in the Private section. Company databases receive only the captures moved in step 5, and a moved page keeps no links into the Private section.
 - Company: stay in the teamspaces; Private sections are outside your scope.
 - Apart from those captures, move nothing into a more open teamspace.
 - The one deletion is step 3's template-only past daily notes, moved to Trash.

@@ -86,7 +86,7 @@ Fetch each kept data source and check that these pairs are two-way and point at 
 | Deals | Client | Clients: Deals |
 | Notes (personal space template) | Project | Projects (personal): Notes |
 
-Skip pairs whose database was removed. In a translated base, find each property by its relation's target database rather than by its English name. Make a one-way pair two-way in place with `notion-update-data-source` (the relation with DUAL and the other side's name). Every other relation is one-way by design. Also check that the personal space template's Notes relations (Company project, Client, People) point at this base's Projects, Clients and People.
+Skip pairs whose database was removed. In a translated base, find each property by its relation's target database rather than by its English name. Make a one-way pair two-way in place with `notion-update-data-source` (the relation with DUAL and the other side's name). Every other relation is one-way by design. Also check that the personal space template's Notes relations (Company project, Client, People) point at this base's Projects, Clients and People, and that its Daily note relation is one-way and points at that same Notes.
 
 Done when every listed pair of a kept database reads back two-way.
 

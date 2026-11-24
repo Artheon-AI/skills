@@ -17,12 +17,11 @@ This file is the one place for structure facts; update it when the template chan
 Open to every member. Its top level holds exactly three items, in this order:
 
 1. **Home - <Company>**: the company wiki; its top-level pages are the seven hubs. Its Home view is the front door, top to bottom:
-   - one line on what the base is;
-   - **Start here**: Agent Instructions, Notion basics (where the base has one), the Company map, onboarding (the People handbook), and the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something.";
+   - **Start here**: Agent Instructions, Notion basics (where the base has one), the Company map, the People handbook, and the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something.";
    - **Knowledge hubs**: the seven hubs;
    - **Databases**: three columns, Work, Relationships and Operations, each listing its databases;
    - **Now**: tabs with live views: Projects in progress, Current cycle (with project management), Deals today (with the CRM), Recent meetings, Recent decisions, Recently updated.
-   It has no create buttons: records start in their database.
+   It holds only headings, links, live views and the `/kb-guide` line, with no intro or description lines, and no create buttons: records start in their database.
 2. **Databases**: a plain page, not a wiki. One intro line, then every company database under three headings: Work, Relationships, Operations.
 3. **Agent Instructions**: the map of the base for agents and curious people. Locked: everyone reads it, the owner edits it.
 
@@ -72,22 +71,20 @@ Most databases have an "Edited recently" view and a template of the same name as
 
 Each person's Private section mirrors the company teamspace: exactly three items at its root, in this order. Any other private page sits under Home - <Name> or Databases.
 
-1. **Home - <Name>**: the personal wiki; its top-level pages are the person's areas, and managers keep their 1:1 pages here too (one running page per report, shared with that person). Its Home view is the person's Notion home, top to bottom:
-   - one line on what the space is;
+1. **Home - <Name>**: the personal wiki; its top-level pages are the person's areas, and managers keep their 1:1 pages here too (one running page per report, shared with that person). Its Home view is the person's Notion home, top to bottom, with the same plain style as the company Home:
+   - side by side at the very top: the **New capture** button (adds a Notes page with Type Capture and opens it) and **Today**, a one-row view of today's daily note;
    - **Start here**: Agent Instructions - <Name> and the `/kb-guide` line;
-   - a **New capture** button: adds a Notes page with Type Capture and opens it;
-   - **Today**: today's daily note and the notes created today;
    - **Areas**: the area pages;
    - **My records**: tabs with Captures, Active projects, Recent notes, and Reading when kept.
 2. **Agent Instructions - <Name>**: "About me" (who I am, current focus, how I work, how to talk to me) and "My space" (the person's pages and databases, template IDs, their conventions, and dated "Structure changes" lines from the weekly job). The person edits it.
 3. **Databases**: a plain page with the person's databases:
-   - **Notes**: captures, notes, daily notes, resources and private meetings, told apart by Type. Views Captures, Recent, Daily, By day, Resources, Meetings, Edited recently.
+   - **Notes**: captures, notes, daily notes, resources and private meetings, told apart by Type. Views Captures, Recent, Daily, By day, Resources, Meetings, Edited recently. **Daily note** links a note to the daily note of the day it was created.
    - **Projects**: personal projects (owners; optional for others).
    - **Reading**: books read or to read (optional).
    - **People**: private contacts, family and friends; business contacts go to the company's People (optional).
    - **Tasks**: the person's own to-do list (optional).
 
-**Daily notes.** The Daily template in Notes repeats every day around midnight, so today's note exists before the person opens Home - <Name>; nobody creates daily notes by hand. The template's title "@Today" makes each note's title its date, shown in the person's date format. The nightly job moves past ones nobody wrote in to Trash. The "By day" view groups Notes by Date, one group per day, newest first.
+**Daily notes.** The Daily template in Notes repeats every day around midnight, so today's note exists before the person opens Home - <Name>; nobody creates daily notes by hand. The template's title "@Today" makes each note's title its date, shown in the person's date format. Each daily note ends with "Notes that day", a list of the notes whose Daily note points at it: agents set Daily note when they create a note, and the nightly job fills it for notes made that day. The nightly job moves past daily notes nobody wrote in to Trash, unless other notes were made that day. The "By day" view groups Notes by Date, one group per day, newest first.
 
 **Open on start** is each person's own setting: Settings > Preferences > Open on start > "Top page in sidebar" opens Home - <Name> when it is the first page of the Private section and the person has no Favorites.
 

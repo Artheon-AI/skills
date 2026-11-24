@@ -86,6 +86,8 @@ Rows nested under other rows of the same database: People under the person they 
 
 A database template is a ready-made page shape you pick from a database's New button: for example, the Meeting template's headings. Sections are headings with grey hints. A **repeating template** creates a new page on a schedule: each person's daily note is made every day around midnight from the Daily template in their Notes, titled with the date. Each person turns the repeat on in their own copy, in the Notion app.
 
+A template can hold a linked view filtered on the template itself; Notion points it at each new page. That is how a daily note's "Notes that day" lists the notes whose Daily note is that day, and how a process page's "This branch" lists its sub-processes.
+
 For agents: a record created over the Notion tools starts blank unless the template ID is passed. The IDs are listed in the Agent Instructions pages.
 
 Doc: https://www.notion.com/help/database-templates

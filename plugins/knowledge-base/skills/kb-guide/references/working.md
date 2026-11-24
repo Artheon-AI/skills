@@ -14,9 +14,9 @@
 
 ## Manual flows
 
-**Make a capture.** Press **New capture** on Home - <Name> and write a line or a paragraph: an idea, a call summary, something to remember. No template, no properties, no filing. The capture lands in the person's Notes, in the Captures view. That night the nightly job sets its type, area, project and title, links it, and moves clearly-company captures into the right company database (notes from a client call become a Meetings row, a new lead a Deal or People row). Unclear captures stay private.
+**Make a capture.** Press **New capture** on Home - <Name> and write a line or a paragraph: an idea, a call summary, something to remember. No template, no properties, no filing. The capture lands in the person's Notes, in the Captures view. That night the nightly job sets its type, area, project and title, links it (Daily note included, so it shows in that day's daily note), and moves clearly-company captures into the right company database (notes from a client call become a Meetings row, a new lead a Deal or People row). Unclear captures stay private.
 
-**Use the daily note.** The repeating Daily template creates each day's note in Notes around midnight, titled with the date, and it shows under Today on Home - <Name>: open it there rather than making one. Personal and Work to-dos sit at the top, free notes below. Agents write only under the "Agent" heading; the rest belongs to the person. A past daily note nobody wrote in goes to Trash on the nightly run.
+**Use the daily note.** The repeating Daily template creates each day's note in Notes around midnight, titled with the date, and it shows at the top of Home - <Name>, beside New capture: open it there rather than making one. Personal and Work to-dos sit at the top, free notes below, and "Notes that day" at the end lists the notes made that day. Agents write only under the "Agent" heading; the rest belongs to the person. A past daily note nobody wrote in, on a day with no other notes, goes to Trash on the nightly run.
 
 **Create a record.** Open the database (from the Databases page or a hub's Records), click New, pick the template, give it a title by the database's rule, and fill the properties pinned at the top. Relations are optional; agents add missing ones later.
 
