@@ -224,7 +224,7 @@ Property references follow renames on their own; the quoted option names do not.
 
 The wikis' Home views, the Databases pages, the module pages and the hubs' Records, top to bottom. Headings are H2. These pages hold only headings, links, views and the `/kb-guide` line: no intro line under the title, no paragraph under a heading, no description after a link. The module pages are the one exception: one line on how the module works.
 
-**Compact views.** Every linked view in a tabs block (Homes, module pages, hubs, sprint pages) uses the List layout, shows the title and at most two properties, and hides the data source title.
+**Compact views.** Every linked view in a tabs block (Homes, module pages, hubs, sprint pages) uses the List layout, shows the title and at most two properties, and hides the data source title. A tab is its title alone, with no icon.
 
 **Grouped lists.** Projects, Issues and Clients open on their "All" view: a list grouped by Status (Clients: by Stage) in Linear order, empty groups hidden, Done (Clients: Former) collapsed, Canceled hidden. The orders: Issues In progress, Todo, Backlog, Triage, Done; Projects In progress, Planned, Paused, Backlog, Done; Clients Client, Prospect, Former. The module tabs that group by status use the same order. Group order and collapsed groups are set in the app ([app-only steps](app-only-steps.md), A6).
 
