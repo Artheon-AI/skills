@@ -227,7 +227,7 @@ The wikis' Home views and the Databases pages, top to bottom. Headings are H2.
 2. "Start here": mentions of Agent Instructions, the Company map and the People handbook (onboarding), then the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something."
 3. "Knowledge hubs": the seven hubs' page blocks.
 4. "Databases": three columns, Work, Relationships and Operations, each a list of mentions of its databases (as on the Databases page).
-5. "Now": a tabs block with linked views: Projects in progress, Current cycle (the Cycle board's Current cycle view; project management), Deals today (CRM), Recent meetings, Recent decisions, Recently updated.
+5. "Now": a tabs block with linked views: Projects in progress, Current cycle (a linked Issues board filtered to Cycle: Current, grouped by Status; project management), Deals today (CRM), Recent meetings, Recent decisions, Recently updated.
 
 No create buttons.
 
