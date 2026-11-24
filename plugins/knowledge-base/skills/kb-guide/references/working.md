@@ -24,6 +24,8 @@
 
 **Find something.** Notion search matches titles best: try likely titles and the "Also known as" names. If search misses, open the database and use its views. Or ask an agent: it searches the same way and reads the views for you.
 
+**Set up your sidebar.** In the Notion desktop app, turn on the new sidebar (beta) if Notion offers it. Then use Customize sidebar: Private first, Teamspaces second, and remove or collapse what you don't use (Chats, Meetings, unused shortcuts). Your Private section and the company teamspace then show three items each. Settings > Preferences > Open on start > "Top page in sidebar" opens Home - <Name> when Notion starts.
+
 ## How agents help
 
 **The pointer.** Each person's agent (Claude or Codex) has a short custom instructions block naming the two Agent Instructions pages. It tells the agent to use the base when the person asks to note, remember or find something, or mentions a person, client, project, plan or event. The agent reads both pages once per conversation and follows their links.

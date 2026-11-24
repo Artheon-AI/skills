@@ -4,7 +4,7 @@ Steps the Notion MCP cannot do. Do them yourself in the browser when you have on
 
 Notion's app shows MCP edits after a few seconds; reload before judging a page.
 
-Contents: A1 teamspaces; A2 wikis; A3 sub-items; A4 Sub-tasks and Sprints; A5 relation tabs; A6 views, filters, formulas, templates and defaults; A7 lock; A8 groups; A9 Claude Team; Private pages; personal Home and daily note; Open on start.
+Contents: A1 teamspaces; A2 wikis; A3 sub-items; A4 Sub-tasks and Sprints; A5 relation tabs; A6 views, filters, formulas, templates and defaults; A7 lock; A8 groups; A9 Claude Team; Private pages; personal Home and daily note; Open on start; sidebar.
 
 ## A1 Teamspaces and Move to
 
@@ -115,3 +115,13 @@ Per person, in P3, signed in as that person.
 ## Open on start
 
 The person's own setting: Settings > Preferences > Open on start > "Top page in sidebar" opens Home - \<Name> on start when it is the first page of their Private section and they have no Favorites. Tell the person; they choose, and nobody else changes it.
+
+## Sidebar
+
+The person's own sidebar, set up with them in the Notion desktop app so the base reads as three items per space:
+
+1. Turn on Notion's new sidebar (beta) in the desktop app if it is offered. It is clearer than the old one. Drop this step once the new sidebar is Notion's default.
+2. Customize sidebar (bottom of the sidebar): keep the Home tab; put Private first and Teamspaces second; remove or collapse the sections the person does not use (Chats, Meetings, unused shortcuts and tabs); keep Favorites and Recents only if they use them.
+3. Check: the Private section shows Home - \<Name>, Agent Instructions - \<Name> and Databases; the company teamspace shows Home - \<Company>, Databases and Agent Instructions.
+
+Nobody changes another person's sidebar; guide them through it.

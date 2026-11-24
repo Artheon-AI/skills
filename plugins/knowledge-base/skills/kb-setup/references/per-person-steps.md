@@ -31,7 +31,7 @@ Check: `notion-get-self` returns the person and the company workspace.
 7. Read this copy's template IDs: `notion-fetch` Notes (Daily, Meeting) and Projects (Project).
 8. Fill "Agent Instructions - \<Name>": About me from what the person says (leave the placeholders they skip), My space with mentions of their own copies (Home - \<Name>, Databases and each kept database), their template IDs from step 7, and the 1:1 line only for managers. Delete the lines of parts they did not keep.
 9. In this copy's Daily template (ID from step 7), rename the heading "\<Name>" under Notes to the person's name with `update_content`.
-10. In the app ([app-only steps](app-only-steps.md), "Personal Home and daily note"): check the New capture button and turn on the Daily template's repeat. Then tell the person about Open on start (same file), their own choice.
+10. In the app ([app-only steps](app-only-steps.md), "Personal Home and daily note"): check the New capture button and turn on the Daily template's repeat. Then walk the person through Open on start and the sidebar (same file); both are their own settings.
 
 Done when the Private section holds exactly Home - \<Name>, Agent Instructions - \<Name> and Databases at its root, in that order; New capture adds a capture to the person's Notes; the Daily template repeats every day; and every link in Agent Instructions - \<Name> opens the person's own copies.
 
