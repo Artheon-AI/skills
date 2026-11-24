@@ -14,7 +14,7 @@ Call `notion-get-self`. If the Notion tools are missing or refused, stop and end
 Check that Gmail and Calendar answer. A missing one does not stop the run: skip what needs it, put drafts in the summary instead, and name the connector to reconnect.
 
 ## 2. Read the map
-Fetch the company Agent Instructions (linked in the task prompt, or the page of that name at the top of the company teamspace). Use its databases table for the Deals, People and Clients links, view names and the Deal template ID, and follow its Sales section.
+Fetch the company Agent Instructions (its page ID is in your instructions or the task prompt; otherwise the page of that name at the top of the company teamspace) and its "Sales for agents" subpage, linked under "Specific work". Use the databases table for the Deals, People and Clients links, view names and the Deal template ID, and follow the Sales page.
 
 ## 3. Read the day's deals
 - Deals: the "Today" view and the "Missing next step" view.
@@ -37,7 +37,7 @@ For each message sent or received, call held and event booked:
 - A message the person sent moves To contact to Contacted.
 - A reply moves Contacted to Talking.
 - A booked call or meeting moves the deal to Call booked; set Next step to the call and Next step date to its day.
-- When a New client deal reaches Talking, create its Clients page as the Sales section says.
+- When a New client deal reaches Talking, create its Clients page as the Sales page says.
 - End the touch line that moved the deal with `(Stage to <stage>)`, so the weekly review can count it.
 Won, Lost and Do not contact are set by a person. When a message suggests one of them, quote the line in the summary and leave the stage. Stages only move forward.
 
@@ -56,4 +56,4 @@ Report, short and plain:
 On a schedule nobody answers: make no choice that belongs to the person, list it, and finish.
 End with the count line, counted from what you logged in this run:
 `Outreach <date>: <n> touches, <n> replies, <n> engaged, <n> calls booked, <n> drafts saved`
-Touches are messages the person sent and calls held; engaged are deals moved to Talking. Add any count Agent Instructions' Sales section names.
+Touches are messages the person sent and calls held; engaged are deals moved to Talking. Add any count the Sales page names.

@@ -19,7 +19,7 @@ Done when every part listed for removal is in Trash or dropped, and the parts ma
 ## B2 Translate
 
 Skip (tick "not needed") for an English base. Otherwise translate everything once, now, while no rows exist:
-- page titles and text: hubs, wiki stubs, Home, the part pages, Agent Instructions (both parts), the Template page except its first line, and the personal space template with Agent Instructions - \<Name>;
+- page titles and text: hubs, wiki stubs, Home, the part pages, Agent Instructions (both parts) and its subpages, the Template page except its first line, and the personal space template with Agent Instructions - \<Name>;
 - database titles and descriptions, property names and descriptions, option names, view names;
 - database templates' titles and text (fetch each template ID and rewrite with `replace_content`).
 
@@ -121,8 +121,8 @@ Edit with targeted `update_content`; the page may be locked, and the owner's edi
 - **Databases table:** one row per kept database, with this copy's database mention, what goes here, `collection://` URL, main views as links (`https://app.notion.com/p/<database id>?v=<view id without dashes>`) and template IDs from B6. Drop rows of removed databases. Without the CRM module, leave out the Clients Watch and Renewals links and the People By warmth and Connectors links.
 - **Hubs:** the seven hub mentions with their lines; drop mentions of removed pages from the lines.
 - **Systems map:** the rows from S4 and S8, plus the CRM row without the CRM module, and the storage row (B11).
-- **Kept outside this base:** the password manager, HR records system, pay page and whistleblowing channel as answered.
-- **Module sections:** keep "Project management" and "Sales" only for chosen modules. Without the CRM module, put the no-CRM line under the systems map. Adjust "Where things go": the Issue clause on the "Work being done" row only with project management; the "A sales ask, upsell or renewal" row only with the CRM module; the "A file" row without Drive.
+- **Kept outside this base:** the password manager, HR records system and whistleblowing channel as answered.
+- **Module subpages:** keep the subpage "Project management for agents" only with project management and "Sales for agents" only with the CRM module. Trash a subpage not kept and remove its line under "Specific work"; with neither kept, remove the section. Without the CRM module, put the no-CRM line under the systems map. Adjust "Where things go": the Issue clause on the "Work being done" row only with project management; the "A sales ask, upsell or renewal" row only with the CRM module; the "A file" row without Drive.
 - Leave "Company notes" as its placeholder for the company.
 
 Done when every link in the page opens a page or database of this copy (fetch each one) and no placeholder is left outside Company notes.

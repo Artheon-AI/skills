@@ -153,12 +153,12 @@ Properties, views, template sections and text that belong to a module or busines
 |---|---|---|---|---|---|
 | `props-projects-pm` | Issues, Milestones, Progress, Health, Priority properties; Issues layout tab | `db-projects` | All | Project management chosen | Project management |
 | `rec-issues` | Issues line under Records | `hub-how-we-work` | All | Project management chosen | Project management |
-| `ai-pm` | "Project management" section; Issues, Cycles, Milestones table rows; "with project management, each piece of work is an Issue in its Project" in Where things go | `agent-instructions` | All | Project management chosen | Project management |
+| `ai-pm` | "Project management for agents" subpage of Agent Instructions and its line under "Specific work"; Issues, Cycles, Milestones table rows; "with project management, each piece of work is an Issue in its Project" in Where things go | `agent-instructions` | All | Project management chosen | Project management |
 | `props-clients-crm` | Do not contact, Health, Deals, Open deal value, Open renewal properties; Watch and Renewals views; Deals layout tab | `db-clients` | All | CRM module chosen | CRM |
 | `props-people-crm` | Warmth and Do not contact properties; Roles option Connector; By warmth, Connectors and Do not contact views | `db-people` | All | CRM module chosen | CRM |
 | `props-meetings-crm` | Deal property | `db-meetings` | All | CRM module chosen | CRM |
 | `rec-deals` | Deals line under Records | `hub-customers` | All | CRM module chosen | CRM |
-| `ai-sales` | "Sales" section; Deals table row; Clients' Watch and Renewals links; People's By warmth and Connectors links; "A sales ask, upsell or renewal" row in Where things go | `agent-instructions` | All | CRM module chosen | CRM |
+| `ai-sales` | "Sales for agents" subpage of Agent Instructions and its line under "Specific work"; Deals table row; Clients' Watch and Renewals links; People's By warmth and Connectors links; "A sales ask, upsell or renewal" row in Where things go | `agent-instructions` | All | CRM module chosen | CRM |
 | `prop-crm-record` | CRM record property | `db-clients`, `db-people` | All | CRM module not chosen | CRM |
 | `rec-proof` | Proof line under Records | `hub-customers` | Service firms | With `db-proof` | - |
 | `mgmt-open-hiring` | "Open hiring" heading and its linked view | `wiki-management` | - | With `db-hiring` | - |

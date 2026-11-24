@@ -13,7 +13,7 @@ You review for the owner. You never merge or delete deals and never set Won or L
 Call `notion-get-self`. If the Notion tools are missing or refused, stop and end with: "Notion is not connected: reconnect it, then Run now."
 
 ## 2. Read the map
-Fetch the company Agent Instructions (linked in the task prompt, or the page of that name at the top of the company teamspace). Use its databases table for the Deals, Clients, People, Meetings and Contracts links, view names and the Deal template ID, and follow its Sales section.
+Fetch the company Agent Instructions (its page ID is in your instructions or the task prompt; otherwise the page of that name at the top of the company teamspace) and its "Sales for agents" subpage, linked under "Specific work". Use the databases table for the Deals, Clients, People, Meetings and Contracts links, view names and the Deal template ID, and follow the Sales page.
 
 ## 3. Read the pipeline
 - Deals: the "Board" view for every open deal, "Missing next step", "Gone quiet", "Renewals and upsells", and "Won and lost" for deals closed in the last week.
@@ -23,7 +23,7 @@ Fetch the company Agent Instructions (linked in the task prompt, or the page of 
 Done when every view above is read and each deal you will report is fetched.
 
 ## 4. Add what is missing
-- Links: a deal's Person and Client, a Sales meeting's Deal, and a Clients page for a New client deal at Talking or later, as the Sales section says. Add a link only when the page makes it clear.
+- Links: a deal's Person and Client, a Sales meeting's Deal, and a Clients page for a New client deal at Talking or later, as the Sales page says. Add a link only when the page makes it clear.
 - Renewals: for each client with a contract near its Cancel by and no open Renewal deal (check the client's Deals), open one from the Deal template: "<Client> - renewal", Kind Renewal, Client and Person set, Next step "Start the renewal conversation" with a date well before Cancel by. A second run finds the open deal and opens none.
 
 ## 5. Report

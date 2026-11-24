@@ -27,6 +27,19 @@ Each entry has:
 5. "This company" and "Company notes" are the company's: never touch them.
 6. Last, when every step is checked: move the Agent Instructions version line to the new version and date, change the Template page's "Template version" line to match, and write `<version> applied <date>` under Updates.
 
+## 1.3 (2026-11-23)
+
+**For people:** Agent Instructions is shorter and calmer. "How this base works" keeps what an agent needs on every run; project management and sales guidance moved to two subpages, "Project management for agents" and "Sales for agents", read only for that work. The Skills section folded into Where things go. A capture that is clearly company material now moves into the company base on the nightly run; unclear captures and daily notes stay private. "Added by agents" is gone from each person's page, so agents write to the proper place instead. The Daily template gets a section with the person's name under the Agent section. The custom instructions block now names both pages by ID and says when to use the base, and the task prompts no longer repeat the page links.
+
+**Steps for agents:**
+1. Create the subpages before removing the old sections. With project management, create "Project management for agents" under Agent Instructions; with the CRM module, "Sales for agents". Their texts are in [template texts](template-texts.md), "Agent Instructions subpages", with the mention pointing at this base's Agent Instructions. Done when each kept subpage fetches with its text.
+2. Replace the whole "How this base works" part with the 1.3 text, in the base's language: the sections "Finding things", "Writing things down", "Facts and sources", "Pages people wrote", "What you do on your own", "What you propose first", "Personal spaces", "Skills", "Project management" and "Sales" give way to "Finding and writing", "Where things go", "Company and personal", "Ask first", "Kept outside this base" and "Specific work". Keep this base's own answers in "Kept outside this base" (its HR system) and its "Where things go" variants for missing modules or Drive ([template texts](template-texts.md), "Text that depends on answers"). Under "Specific work", list only the kept subpages, as mentions; with neither, leave the section out. Done when the part matches the 1.3 text and every mention opens this base's subpage.
+3. Without the CRM module, the no-CRM line stays under the systems map; the 1.3 wording only changes its reference to "Sales for agents".
+4. In the personal space template's "Agent Instructions - \<Name>" and the owner's own page: replace the first line with the 1.3 line and remove the "Added by agents" section. If the owner's section holds lines, show them to the owner first and move each to where it belongs. Tell members to ask their agent for the same change on their own page.
+5. In the Daily template of Notes (personal space template and the owner's copy): change the Agent hint to "Agents write here; the rest of the page is yours." and add a heading with the person's name ("\<Name>" in the template) after it, at the same level. Existing daily notes stay as they are.
+6. Give the owner the new custom instructions block, filled with the two page IDs, to replace the old one in each app, and the new task prompts for the scheduled tasks (Claude > Scheduled > the task > edit). Tell members the same for their own block and nightly task. The nightly skill's capture moves need `knowledge-base` 0.2.5 or later.
+7. Move the version line to `Template version 1.3, <date>` (step 6 above).
+
 ## 1.2 (2026-11-23)
 
 **For people:** the People row of the databases table now lists the By warmth and Connectors views, with the CRM module. An agent asked for connectors or a person's warmth searched the database by hand because the row named only Team, Org chart, All and Edited recently (findability walkthrough on Artheon's base).

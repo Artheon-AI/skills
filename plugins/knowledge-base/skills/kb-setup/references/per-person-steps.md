@@ -30,12 +30,13 @@ Check: `notion-get-self` returns the person and the company workspace.
 6. Check: the Notes relations Company project, Client and People point at the company's Projects, Clients and People; Notes' Project and Projects' Notes are two-way; the personal Projects page shows its Notes tab (A5); Share on each moved page lists only the person.
 7. Read this copy's template IDs: `notion-fetch` Notes (Daily, Meeting) and Projects (Project).
 8. Fill "Agent Instructions - \<Name>": About me from what the person says (leave the placeholders they skip), My space with mentions of their own copies, their template IDs from step 7, and the 1:1 line only for managers. Delete the lines of parts they did not keep.
+9. In this copy's Daily template (ID from step 7), rename the heading "\<Name>" under Notes to the person's name with `update_content`.
 
 Done when the Private section starts with Agent Instructions - \<Name>, then Notes, Projects (if kept) and My wiki, and that page's links all open the person's own copies.
 
 ## P4 Instructions pointer
 
-Write the custom instructions block ([template texts](template-texts.md)) with the two links, the company Agent Instructions and this person's Agent Instructions - \<Name>, into each app the person uses:
+Write the personal custom instructions block ([template texts](template-texts.md)) with the two page IDs, the company Agent Instructions and this person's Agent Instructions - \<Name>, into each app the person uses:
 - Claude app: Settings > Profile > instructions for Claude;
 - Claude Code: the user-level `~/.claude/CLAUDE.md`;
 - Codex: the user-level `~/.codex/AGENTS.md`.
@@ -45,7 +46,7 @@ On Team, when the organisation instructions carry the pointer (A9), skip the Cla
 ## P5 Nightly job (paid Claude plan only)
 
 Create "Notion nightly maintenance - \<Name>" as a scheduled task by asking Claude in a Cowork conversation:
-1. The task prompt from [template texts](template-texts.md), with the two links. Model Sonnet, daily at about 01:00 local time (or the time from S9).
+1. The task prompt from [template texts](template-texts.md), with the person's name. Model Sonnet, daily at about 01:00 local time (or the time from S9).
 2. Run now once.
 3. Approve the Notion tools "for all scheduled runs". A tool left on "always ask" makes a run finish without it.
 4. Check the run: it filed something or reported "Nothing to file".
