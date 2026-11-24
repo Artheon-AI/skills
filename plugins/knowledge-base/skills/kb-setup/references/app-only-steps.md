@@ -4,28 +4,32 @@ Steps the Notion MCP cannot do. Do them yourself in the browser when you have on
 
 Notion's app shows MCP edits after a few seconds; reload before judging a page.
 
-Contents: A1 teamspaces; A2 wikis; A3 sub-items; A4 Sub-tasks and Sprints; A5 relation tabs; A6 views, filters, formulas, templates and defaults; A7 lock; A8 groups; A9 Claude Team; Private pages.
+Contents: A1 teamspaces; A2 wikis; A3 sub-items; A4 Sub-tasks and Sprints; A5 relation tabs; A6 views, filters, formulas, templates and defaults; A7 lock; A8 groups; A9 Claude Team; Private pages; personal Home and daily note; Open on start.
 
 ## A1 Teamspaces and Move to
 
 1. Create the company teamspace, named after the company, **Open**; and **Management**, **Closed**. Click-list: sidebar > "+" beside Teamspaces > Create a teamspace > name > permission Open (or Closed) > Create. If Notion adds its own starter page to a new teamspace, trash it with the owner's yes.
-2. Move the contents of the "Company teamspace" part page to the company teamspace's top level, and of "Management teamspace" to Management's. Click-list: open the part page, select its pages and databases (click the first, Shift-click the last), "..." > Move to > the teamspace. The MCP cannot place anything at a teamspace's top level.
-3. Order the company sidebar: Home, Agent Instructions, Projects, Meetings, Clients, People, Processes, Partners, Decisions, Ideas, then the module and optional databases (Issues, Cycle board, Cycles, Milestones, Deals, Proof, Equipment, Events, Goals). Management: Management, Contracts, Hiring. Drag in the sidebar.
+2. Move the part pages' children to the teamspaces' top level; the MCP cannot place anything there. The databases travel inside their pages, so this is four items:
+   - Company teamspace: Home - \<Company>, Databases, Agent Instructions. Click-list: open the "Company teamspace" part page, select the three (click the first, Shift-click the last), "..." > Move to > the company teamspace.
+   - Management: the Management wiki, with Contracts and Hiring inside it. Click-list: open the "Management teamspace" part page, select the wiki, "..." > Move to > Management.
+3. Order matters: the sidebar is how people find their way in, and the front door comes first. Reload and read the company teamspace in the sidebar: exactly Home - \<Company>, Databases, Agent Instructions, in that order. Drag an item that is out of place. Management shows only Management.
 4. Trash the empty part pages and the handover page over the MCP, after checking they hold nothing (the personal space template is already under the Template page, B12).
 
-Check: `notion-fetch` of each moved database and of Agent Instructions shows the teamspace at the top of its ancestor path, and the part pages are in Trash.
+Check: `notion-fetch` of Agent Instructions and of each moved database shows the teamspace at the top of its ancestor path (a company database under Databases, Contracts under Management), and the part pages are in Trash.
 
 ## A2 Wikis and hidden wiki properties
 
-Home, Management (and each person's My wiki, P3) must be wikis.
+Home - \<Company>, Management (and each person's Home - \<Name>, P3) must be wikis.
 
 Check first: a wiki's data source has Owner and Verification properties, and `notion-query-data-sources` in SQL mode is refused for it ("not supported for wiki databases").
 
 If the copy lost wiki status:
 1. Click-list: open the page > "..." > Turn into wiki.
 2. Hide Owner and Verification: open any page of that wiki > click the property name > Property visibility > Always hide. It applies to the whole wiki. The MCP refuses page layouts on wikis.
-3. Over the MCP: drop Tags; make sure Status (Draft default, Current, Outdated) and, on Home and Management, "Requires edit approval" exist with their descriptions ([template texts](template-texts.md), "Wiki properties"). Set "Requires edit approval" to Always show in the app if it hides when unticked.
-4. Icons on wikis are set in the app (Add icon): 🏠 Home, 🏛️ Management, 📚 My wiki.
+3. Over the MCP: drop Tags; make sure Status (Draft default, Current, Outdated) and, on Home - \<Company> and Management, "Requires edit approval" exist with their descriptions ([template texts](template-texts.md), "Wiki properties"). Set "Requires edit approval" to Always show in the app if it hides when unticked.
+4. Icons on wikis are set in the app (Add icon): 🏠 Home - \<Company>, 🏛️ Management, 🏠 Home - \<Name>.
+
+**Wiki titles.** A wiki's title belongs to its database: set it with `notion-update-data-source` `title`. Reload the app and read the sidebar; if it still shows the old name, open the wiki and type the title in the app. Check: `notion-fetch` and the sidebar show the same title.
 
 ## A3 Sub-items and "This branch"
 
@@ -70,6 +74,8 @@ Rebuild a missing tab: page "..." > Appearance & layout > Customize layout > Str
 - **Gone quiet** (CRM module): Deals > Gone quiet > filter "Days since touch" is greater than or equal to the owner's number > Save for everyone. The MCP silently drops filters on formula properties. Check: `notion-fetch` of the view shows the filter.
 - **Open renewal** (CRM module, after a stage rename or translation): Clients > Open renewal column > Edit property > Edit formula, type the formula from [template texts](template-texts.md) with this base's stage and kind names, click outside to save. Check: the property reads back with the new names.
 - **Templates:** a missing database template is created in the app: the database's New dropdown > New template, title typed in the app (the first typing after the editor opens is often lost; retype), body filled over the MCP on its ID. Make it the default: New dropdown > template "..." > Set as default > For all views (Notes' Daily and Meeting: "Only on" the Daily and Meetings views). Create it from an unfiltered view, or it picks up the view's filter values.
+- **Current cycle tab** (project management): Home - \<Company>'s Now tabs hold a linked view of the Cycle board's Current cycle view, which only the app can make. When the tab is empty or points at another board (after A4 made a new Cycle board): open the tab, remove the old view, type `/linked` > Linked view of data source > Cycle board > its existing Current cycle view. Check: a view-mode query of the tab's view lists the current cycle's issues.
+- **By day** (Notes): the view DSL groups dates by relative ranges, so set the day grouping in the app: Notes > By day > Group > Date > Date by: Day; sort Date, newest first. Check: `notion-fetch` of Notes lists By day, grouped by Date.
 - **Status defaults** the copy lost: column > Edit property > option > Set as default. Projects Planned, Issues Backlog, Deals the first stage, Processes Proposed, personal Projects Active.
 
 ## A7 Lock Agent Instructions
@@ -98,3 +104,14 @@ Check: ask the owner to open a new conversation and confirm the instructions app
 ## Private pages
 
 Moving a page into someone's Private section is an app step. `notion-move-pages` to the workspace keeps the teamspace's access, and the page shows under Shared. Click-list: "..." > Move to > Private pages > "Make this page private?" > Move to private. Check: the page's Share lists only its person.
+
+## Personal Home and daily note
+
+Per person, in P3, signed in as that person.
+
+- **New capture button** on Home - \<Name>: press it. It should open a new page with Type Capture in this person's own Notes (the breadcrumb shows their Databases > Notes). If it adds to another Notes, or is missing, rebuild it: `/button` > name "New capture" > Do: "Add page to..." > the person's Notes, Type Capture > add "Open page, form, or URL" > the page added in step 1 > Done. Buttons are app-only. Check: the test page is in the Captures view; trash it.
+- **Daily repeat:** Notes > New dropdown > Daily "..." > Edit. In the template's banner: "Duplicate every..." > Day, then Edit cadence: Every 1 Day, At "Around midnight", Starting Tomorrow, Ending Never, the person's timezone > Save. The MCP cannot set it. Check the next day: Notes holds a Type Daily row with today's Date, titled with the date.
+
+## Open on start
+
+The person's own setting: Settings > Preferences > Open on start > "Top page in sidebar" opens Home - \<Name> on start when it is the first page of their Private section and they have no Favorites. Tell the person; they choose, and nobody else changes it.

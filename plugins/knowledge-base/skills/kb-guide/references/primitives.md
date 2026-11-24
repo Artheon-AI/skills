@@ -84,7 +84,7 @@ Rows nested under other rows of the same database: People under the person they 
 
 ## Database templates and repeating templates
 
-A database template is a ready-made page shape you pick from a database's New button: for example, the Meeting template's headings. Sections are headings with grey hints. A **repeating template** creates a new page on a schedule: each person's daily note is made automatically every day from the Daily template in their Notes.
+A database template is a ready-made page shape you pick from a database's New button: for example, the Meeting template's headings. Sections are headings with grey hints. A **repeating template** creates a new page on a schedule: each person's daily note is made every day around midnight from the Daily template in their Notes, titled with the date. Each person turns the repeat on in their own copy, in the Notion app.
 
 For agents: a record created over the Notion tools starts blank unless the template ID is passed. The IDs are listed in the Agent Instructions pages.
 
@@ -92,7 +92,7 @@ Doc: https://www.notion.com/help/database-templates
 
 ## Buttons
 
-A block that runs a small action when clicked, such as creating a page with set properties. The personal Home has a **New capture** button that adds a capture to the person's Notes in one click.
+A block that runs a small action when clicked, such as creating a page with set properties. The personal Home has a **New capture** button that adds a capture to the person's Notes and opens it. Buttons are made in the Notion app; agents cannot create them over the Notion tools.
 
 Doc: https://www.notion.com/help/buttons
 
@@ -104,7 +104,7 @@ Doc: https://www.notion.com/help/create-links-and-backlinks
 
 ## Sharing and permissions
 
-Who can open or edit a page is set in Notion: teamspaces are the boundaries, groups are the roles. Agents act with the connected person's own permissions, so an agent sees exactly what that person sees. The company Agent Instructions page is locked: everyone can read it, the owner edits it. A manager's 1:1 page sits in their Private section and is shared with the other person.
+Who can open or edit a page is set in Notion: teamspaces are the boundaries, groups are the roles. Agents act with the connected person's own permissions, so an agent sees exactly what that person sees. The company Agent Instructions page is locked: everyone can read it, the owner edits it. A manager's 1:1 pages sit under their Home - <Name> and are shared with the other person.
 
 Doc: https://www.notion.com/help/sharing-and-permissions
 

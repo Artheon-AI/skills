@@ -10,13 +10,13 @@
 - **Requires edit approval**: tick it on any wiki page whose edits should go through its owner. Who may edit at all is set by page access.
 - **Personal links point one way**: personal pages may link to company pages; company pages link only to company pages. To share a personal note, move it into the company base.
 - **Leave out** passwords and keys, health data and personnel records.
-- With project management: keep Sprints switched on (switching them off deletes every cycle), and settle sub-issues before deleting an issue, since deleting a parent deletes its sub-issues.
+- With project management: keep Sprints switched on (switching them off deletes every cycle), and settle sub-issues before deleting an issue, since Notion leaves them behind.
 
 ## Manual flows
 
 **Make a capture.** Press **New capture** on Home - <Name> and write a line or a paragraph: an idea, a call summary, something to remember. No template, no properties, no filing. The capture lands in the person's Notes, in the Captures view. That night the nightly job sets its type, area, project and title, links it, and moves clearly-company captures into the right company database (notes from a client call become a Meetings row, a new lead a Deal or People row). Unclear captures stay private.
 
-**Use the daily note.** Each day's note is created automatically in Notes from the repeating Daily template and shows on Home - <Name>. Personal and Work to-dos sit at the top, free notes below. Agents write only under the "Agent" heading; the rest belongs to the person.
+**Use the daily note.** The repeating Daily template creates each day's note in Notes around midnight, titled with the date, and it shows under Today on Home - <Name>: open it there rather than making one. Personal and Work to-dos sit at the top, free notes below. Agents write only under the "Agent" heading; the rest belongs to the person. A past daily note nobody wrote in goes to Trash on the nightly run.
 
 **Create a record.** Open the database (from the Databases page or a hub's Records), click New, pick the template, give it a title by the database's rule, and fill the properties pinned at the top. Relations are optional; agents add missing ones later.
 
@@ -50,9 +50,9 @@ The guidance describes the base rather than giving orders; the person the agent 
 
 **The scheduled jobs.** They run as Claude scheduled tasks in each person's own Claude account, so a person without a paid Claude plan has no job.
 
-- **Nightly, personal** ("Notion nightly maintenance - <Name>", around 01:00, in the person's Private section): works through Captures, the "Edited recently" views and new pages; sets type, area, project and titles; fills empty properties and missing relations; adds Related lists; tidies formatting while keeping every word; moves clearly-company captures into the company base. It skips approval-ticked pages and likely duplicates, deletes nothing, and ends with one line.
+- **Nightly, personal** ("Notion nightly maintenance - <Name>", around 01:00, in the person's Private section): works through Captures, the "Edited recently" views and new pages; sets type, area, project and titles; fills empty properties and missing relations; adds Related lists; tidies formatting while keeping every word; moves clearly-company captures into the company base; gives past daily notes a plain "YYYY-MM-DD" title and moves those nobody wrote in to Trash. It skips approval-ticked pages and likely duplicates, and ends with one line.
 - **Nightly, company** ("Notion nightly maintenance - Company", around 02:00, run as the owner): the same in the company and Management teamspaces, plus creating clearly described records. It never reads anyone's Private section.
-- **Weekly** ("Notion weekly maintenance", Sunday early morning, for the owner): finishes leftovers, merges duplicates (the merged-away page goes to Trash, the only deletion any job makes), makes clear, lasting structure changes and records each one, and writes a report: This week, Changed (each with a way to undo), Merged, Worth a look, Proposed processes, Health.
+- **Weekly** ("Notion weekly maintenance", Sunday early morning, for the owner): finishes leftovers, merges duplicates (the merged-away page goes to Trash), makes clear, lasting structure changes and records each one, and writes a report: This week, Changed (each with a way to undo), Merged, Worth a look, Proposed processes, Health.
 - **Template update** ("Notion template update", for the owner): applies new versions of Artheon's template.
 
 Every agent edit shows in Notion as the connected person, and page history keeps 30 days of versions on Plus, so any change can be checked and undone.

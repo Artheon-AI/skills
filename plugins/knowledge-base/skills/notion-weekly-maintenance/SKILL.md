@@ -17,7 +17,7 @@ Fetch the company Agent Instructions and the owner's Agent Instructions - <Name>
 Go through the "Edited recently" view of every database and wiki, and the Notes "Captures" view. Note what moved in the company and in the owner's space. Captures several days old mean the nightly jobs have stopped.
 
 ## 4. Finish what the nightly jobs left
-For pages still unfiled, use step 4 of `notion-nightly-maintenance`, keeping its boundaries: only captures that are clearly company material move to the company base.
+For pages still unfiled, use step 5 of `notion-nightly-maintenance`, keeping its boundaries: only captures that are clearly company material move to the company base.
 
 ## 5. Merge duplicates
 When two pages cover the same thing in the same space, keep the fuller or older one, move the other's unique content into it, add the other's title to "Also known as" where the database has it, and move the leftover to Trash.

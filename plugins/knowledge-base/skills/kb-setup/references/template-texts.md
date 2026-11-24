@@ -1,8 +1,8 @@
 # Template texts
 
-The current English texts setup writes or checks, for template version 1.3. In a translated base, setup writes them in the base's language. Placeholders are in angle brackets.
+The current English texts setup writes or checks, for template version 1.4. In a translated base, setup writes them in the base's language. Placeholders are in angle brackets.
 
-Contents: version line; "How this base works"; Agent Instructions subpages; "This company"; text that depends on answers; formulas; descriptions; wiki properties; database templates; Agent Instructions - \<Name>; custom instructions block; task prompts; Template page lines.
+Contents: version line; "How this base works"; Agent Instructions subpages; "This company"; text that depends on answers; formulas; descriptions; wiki properties; Home views and Databases pages; database templates; Agent Instructions - \<Name>; custom instructions block; task prompts; Template page lines.
 
 ## Version line
 
@@ -127,7 +127,7 @@ Written at setup and kept by <Company>. Template updates leave this part alone.
 |---|---|---|---|---|
 | <database mention> | <what goes here, with the title rule> | `collection://<data source id>` | [<view>](https://app.notion.com/p/<database id>?v=<view id without dashes>), ... | <Template> `<template id>`, or None |
 
-Wikis: <Home mention> (hubs below), <Management mention> (owners). Each person's databases and their template IDs are in their own "Agent Instructions - <Name>".
+Wikis: <Home - <Company> mention> (the company wiki; its top-level pages are the hubs below), <Management mention> (owners; Contracts sits inside it). The company databases sit under the Databases page, grouped as Work, Relationships and Operations. Each person's databases and their template IDs are in their own "Agent Instructions - <Name>".
 
 ### Hubs
 
@@ -215,8 +215,38 @@ Property references follow renames on their own; the quoted option names do not.
 ## Wiki properties
 
 - **Status** (Notion status): Draft (To-do, default), Current (In progress), Outdated (Complete). Description: "Draft: being written, not yet relied on. Current: up to date and in use. Outdated: no longer true; kept for history."
-- **Requires edit approval** (checkbox, Home and Management only): "Ticked: agents propose any edit in chat and make it only after an explicit yes; scheduled jobs leave the page as it is. Who may edit at all is set by page access." Ticked in the master on Direction, Offer and pricing, Operating principles and Finance rules.
+- **Requires edit approval** (checkbox, Home - \<Company> and Management only): "Ticked: agents propose any edit in chat and make it only after an explicit yes; scheduled jobs leave the page as it is. Who may edit at all is set by page access." Ticked in the master on Direction, Offer and pricing, Operating principles and Finance rules.
 - Owner and Verification: Always hide. No Tags.
+
+## Home views and Databases pages
+
+The wikis' Home views and the Databases pages, top to bottom. Headings are H2.
+
+**Home - \<Company>** Home view:
+1. One line on what the base is.
+2. "Start here": mentions of Agent Instructions, the Company map and the People handbook (onboarding), then the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something."
+3. "Knowledge hubs": the seven hubs' page blocks.
+4. "Databases": three columns, Work, Relationships and Operations, each a list of mentions of its databases (as on the Databases page).
+5. "Now": a tabs block with linked views: Projects in progress, Current cycle (the Cycle board's Current cycle view; project management), Deals today (CRM), Recent meetings, Recent decisions, Recently updated.
+
+No create buttons.
+
+**Databases** (company): one intro line, then the headings Work, Relationships and Operations with each kept database as a child database block under its heading:
+- Work: Projects, Issues, Cycle board, Cycles, Milestones, Goals.
+- Relationships: Clients, Deals, People, Partners, Proof.
+- Operations: Meetings, Decisions, Ideas, Processes, Equipment, Events.
+
+**Management** Home view: after its linked Contracts view (By cancel date), a "Records" heading holding the Contracts and Hiring database blocks.
+
+**Home - \<Name>** Home view:
+1. One line on what the space is.
+2. "Start here": a mention of Agent Instructions - \<Name> and the `/kb-guide` line.
+3. A "New capture" button: adds a Notes page with Type Capture, then opens it.
+4. "Today": a linked list view of Notes, Created time is today, oldest first (today's daily note and the notes created today).
+5. "Areas": the area page blocks.
+6. "My records": a tabs block with linked views: Captures, Active projects, Recent notes, Reading (when kept).
+
+**Databases** (personal): one intro line, then Notes, Projects, Reading, People and Tasks, whichever the person keeps, as child database blocks.
 
 ## Database templates
 
@@ -235,7 +265,7 @@ Sections are H2 headings, each with a one-line grey hint where the master has on
 | Issues | Issue | What to do; Done when (one empty to-do); Links; Progress ("One short line, updated as work moves."). Status Backlog |
 | Deals | Deal | Ask; Context; Touches ("One dated line per touch, newest last. Set Last touch to match."); Outcome |
 | Hiring | Candidate | Role; Notes; Decision |
-| Notes | Daily | Personal (empty to-do); Work (empty to-do); Notes > ### Agent ("Agents write here; the rest of the page is yours."), then ### \<Name> (setup writes the person's name). Type Daily, Date "Today" |
+| Notes | Daily | Title "@Today" (typed in the app: `@today` > "Today - Date when duplicated"). Personal (empty to-do); Work (empty to-do); Notes > ### Agent ("Agents write here; the rest of the page is yours."), then ### \<Name> (setup writes the person's name). Type Daily, Date "Today". In each person's copy it repeats every day, Around midnight (P3); the master's does not repeat |
 | Notes | Meeting | The company Meeting sections. Type Meeting, Date "Today" |
 | Projects (personal) | Project | Outcome; Current state; Next actions (one empty to-do) |
 
@@ -253,10 +283,11 @@ Read after the company Agent Instructions whenever you work for <Name>. <Name> e
 
 ## My space
 
-- <Notes mention>: captures, notes, daily notes, resources, private meetings. Views: Captures, Recent, Daily, Resources, Meetings, Edited recently. Templates: Daily `<id>`, Meeting `<id>`; a capture needs none.
-- 1:1 pages (copies of <1:1 - Name mention>): one running page per person I meet one to one, shared with them. (Managers.)
+- <Home - <Name> mention>: my wiki and home page; its top-level pages are my areas.
+- <Databases mention>: the page that holds my databases below.
+- <Notes mention>: captures, notes, daily notes, resources, private meetings. The repeating Daily template creates each day's note, so find today's note rather than creating one. Views: Captures, Recent, Daily, By day, Resources, Meetings, Edited recently. Templates: Daily `<id>`, Meeting `<id>`; a capture needs none.
+- 1:1 pages (copies of <1:1 - Name mention>, under Home - <Name>): one running page per person I meet one to one, shared with them. (Managers.)
 - <Projects mention>: my personal projects. Template: Project `<id>`. (Owners; optional for others.)
-- <My wiki mention>: my explained knowledge, areas as top-level pages.
 - <Reading mention>: books I read or want to read. (Optional.)
 - <People mention>: my private contacts, family and friends; business contacts go to the company's People. (Optional.)
 - <Tasks mention>: my own to-do list. (Optional.)
@@ -285,7 +316,7 @@ Organisation version, for Claude Team organisation instructions:
 ```text
 Notion holds our knowledge base: <Company>'s company base and each person's personal space. Two pages describe them and link to the rest; open them with the Notion tools and follow them:
 - <Company>'s Agent Instructions: <page id>
-- The person's own "Agent Instructions - <their name>", the first page of their Private section (search for that title).
+- The person's own "Agent Instructions - <their name>", in their Private section (search for that title).
 Use the base when a request touches <Company> or the person's own life and work: when they ask you to note, remember or find something, when they mention a person, client, project, plan or event, or when what we already know would help. Read both pages once per conversation, then follow their links to the pages the request needs.
 ```
 

@@ -1,6 +1,6 @@
 # Build steps (phase 2, over the MCP)
 
-Run in order; each step starts by reading the Template page and ends by ticking its line. The parts map gives you each part's page or database in this copy. Where a step needs the app, it names the [app-only step](app-only-steps.md); do that step there and come back.
+Run in order; each step starts by reading the Template page and ends by ticking its line. The parts map gives you each part's page or database in this copy. The copy already has the 1.4 shape: under the company part page, Home - \<Company>, Databases (every company database under Work, Relationships and Operations) and Agent Instructions; under the Management part page, the Management wiki with Contracts and Hiring inside it; under the personal part page, Home - \<Name>, Agent Instructions - \<Name> and Databases. Where a step needs the app, it names the [app-only step](app-only-steps.md); do that step there and come back.
 
 Contents: B1 remove; B2 translate; B3 module and part settings; B4 template sections; B5 two-way relations; B6 template IDs; B7 Agent Instructions; B8 version line; B9 Factories; B10 team and processes; B11 storage; B12 personal space template.
 
@@ -8,10 +8,10 @@ Contents: B1 remove; B2 translate; B3 module and part settings; B4 template sect
 
 1. From "Parts chosen and removed" and the [parts manifest](parts-manifest.md), list every part to remove, grouped: pages, databases, properties and views, template sections, Agent Instructions text. Show the list and remove after the owner's yes.
 2. A database with a two-way relation leaves its synced side on the other database (Equipment's Holder shows on People as Equipment; Deals' Client on Clients as Deals). Drop the relation pair first (`DROP COLUMN` on one side drops both), then trash the database.
-3. **Project management not chosen:** first turn Sprints off in the app (A4, "Not chosen"), because Sprints must be off before Issues goes. Then trash `db-issues`, `db-cycle-board` (if still there) and `db-milestones`; drop Projects' Issues, Milestones, Progress, Health and Priority (`props-projects-pm`); remove the Issues line from How we work's Records (`rec-issues`).
-4. **CRM module not chosen:** trash `db-deals`; drop Clients' Do not contact, Health, Deals, Open deal value and Open renewal, People's Warmth and Do not contact, and Meetings' Deal; rewrite People's Roles options without Connector (no rows exist yet, so a full option list is safe); remove the Deals line on Customers and offer (`rec-deals`). The leftover views (Clients Watch and Renewals; People By warmth, Connectors, Do not contact) go in A6.
+3. **Project management not chosen:** first turn Sprints off in the app (A4, "Not chosen"), because Sprints must be off before Issues goes. Then trash `db-issues`, `db-cycle-board` (if still there) and `db-milestones`; drop Projects' Issues, Milestones, Progress, Health and Priority (`props-projects-pm`); remove the Issues line from How we work's Records (`rec-issues`) and the Current cycle tab from Home - \<Company>'s Now tabs (`home-now-cycle`).
+4. **CRM module not chosen:** trash `db-deals`; drop Clients' Do not contact, Health, Deals, Open deal value and Open renewal, People's Warmth and Do not contact, and Meetings' Deal; rewrite People's Roles options without Connector (no rows exist yet, so a full option list is safe); remove the Deals line on Customers and offer (`rec-deals`) and the Deals today tab from Home - \<Company>'s Now tabs (`home-now-deals`). The leftover views (Clients Watch and Renewals; People By warmth, Connectors, Do not contact) go in A6.
 5. **CRM module chosen:** drop "CRM record" on Clients and People (`prop-crm-record`).
-6. Pages and databases not kept: trash them (the MCP's delete tools move them to Trash). With `db-proof` removed, also its Records line (`rec-proof`); with `db-hiring` removed, the "Open hiring" heading and view on the Management wiki (`mgmt-open-hiring`). Remove linked views and lines with targeted `update_content` edits that keep every other block, including the hubs' `<page>` tags.
+6. Pages and databases not kept: trash them (the MCP's delete tools move them to Trash); a database goes from its place on the Databases page or, for Hiring, the Management wiki. Also remove each removed database's mention from Home - \<Company>'s Databases columns (`home-db-links`). With `db-proof` removed, also its Records line (`rec-proof`); with `db-hiring` removed, the "Open hiring" heading and view on the Management wiki (`mgmt-open-hiring`). Remove linked views, tabs and lines with targeted `update_content` edits that keep every other block, including the hubs' `<page>` tags and the `<database>` tags of kept databases.
 7. Agent Instructions text for removed modules (`ai-pm`, `ai-sales`) is handled in B7.
 
 Done when every part listed for removal is in Trash or dropped, and the parts map marks each one "removed <date>".
@@ -19,7 +19,7 @@ Done when every part listed for removal is in Trash or dropped, and the parts ma
 ## B2 Translate
 
 Skip (tick "not needed") for an English base. Otherwise translate everything once, now, while no rows exist:
-- page titles and text: hubs, wiki stubs, Home, the part pages, Agent Instructions (both parts) and its subpages, the Template page except its first line, and the personal space template with Agent Instructions - \<Name>;
+- page titles and text: hubs, wiki stubs, Home - \<Company> and Management (a wiki's title is set with `notion-update-data-source` `title`; check it in the app, A2), both Databases pages and their headings, the part pages, Agent Instructions (both parts) and its subpages, the Template page except its first line, and the personal space template with Agent Instructions - \<Name>;
 - database titles and descriptions, property names and descriptions, option names, view names;
 - database templates' titles and text (fetch each template ID and rewrite with `replace_content`).
 
@@ -117,7 +117,8 @@ Done when every kept database's templates are listed with their IDs.
 ## B7 Fill Agent Instructions' company part
 
 Edit with targeted `update_content`; the page may be locked, and the owner's edits still go through. Texts and formats are in [template texts](template-texts.md).
-- Replace \<Company> and \<HR system or Management documents>.
+- Replace \<Company> and \<HR system or Management documents>, here and in Home - \<Company>'s title (`notion-update-data-source` `title`, checked in the app, A2) and Home view.
+- **Wikis line:** mentions of this copy's Home - \<Company> and Management.
 - **Databases table:** one row per kept database, with this copy's database mention, what goes here, `collection://` URL, main views as links (`https://app.notion.com/p/<database id>?v=<view id without dashes>`) and template IDs from B6. Drop rows of removed databases. Without the CRM module, leave out the Clients Watch and Renewals links and the People By warmth and Connectors links.
 - **Hubs:** the seven hub mentions with their lines; drop mentions of removed pages from the lines.
 - **Systems map:** the rows from S4 and S8, plus the CRM row without the CRM module, and the storage row (B11).

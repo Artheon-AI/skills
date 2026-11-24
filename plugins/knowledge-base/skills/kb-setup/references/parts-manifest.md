@@ -1,8 +1,8 @@
 # Parts manifest
 
-Every part of the master template (version 1.0), with a fixed ID. Setup maps each ID to the copy's page or database in the Template page's parts map (S1), removes what was not chosen (B1), and template updates address parts by these IDs.
+Every part of the master template (version 1.4), with a fixed ID; a renamed part keeps its ID. Setup maps each ID to the copy's page or database in the Template page's parts map (S1), removes what was not chosen (B1), and template updates address parts by these IDs.
 
-Contents: business types; how to read the conditions; structure; Home hubs and wiki pages; Management; databases; personal space; parts inside other parts.
+Contents: business types; how to read the conditions; structure; hubs and wiki pages; Management; databases; personal space; parts inside other parts.
 
 ## Business types
 
@@ -25,21 +25,22 @@ Service firms are `agency`, `software`, `erp` and `expertise`. A company that fi
 - **Optional:** offered to every company, kept only on a yes.
 - **<Module> chosen / not chosen:** follows the S5 answer.
 
-"Where it sits" is the place in the master. Names are the master's English titles.
+"Where it sits" is the place in the master; for a database under a Databases page, also its heading. Names are the master's English titles.
 
 ## Structure
 
 | Part ID | Name in the master | Where it sits | Default for | Condition | Module |
 |---|---|---|---|---|---|
 | `handover` | Knowledge base template | Template teamspace (the page the owner duplicates) | All | Always; trashed once empty after A1 | - |
-| `part-company` | Company teamspace | Under `handover` | All | Always; its contents move to the company teamspace in A1, then it is trashed | - |
-| `part-management` | Management teamspace | Under `handover` | All | Always; its contents move to the Management teamspace in A1, then it is trashed | - |
+| `part-company` | Company teamspace | Under `handover` | All | Always; its three children move to the company teamspace's top level in A1, then it is trashed | - |
+| `part-management` | Management teamspace | Under `handover` | All | Always; the Management wiki moves to the Management teamspace's top level in A1, then it is trashed | - |
 | `part-personal` | Personal space | Under `handover` | All | Always; parked under the Template page as everyone's personal space template (B12) | - |
-| `wiki-home` | Home (wiki) | `part-company` | All | Always | - |
-| `agent-instructions` | Agent Instructions | `part-company` | All | Always | - |
+| `wiki-home` | 🏠 Home - \<Company> (wiki; "Home" before 1.4) | `part-company`, first | All | Always | - |
+| `pg-databases` | 🗂️ Databases (plain page) | `part-company`, second | All | Always | - |
+| `agent-instructions` | 🧭 Agent Instructions | `part-company`, third | All | Always | - |
 | `template-page` | Template page | Under `agent-instructions` | All | Always | - |
 
-## Home hubs and wiki pages
+## Hubs and wiki pages
 
 Hubs are the top-level pages of `wiki-home`; wiki pages are children of their hub. "(approval)" marks pages ticked "Requires edit approval".
 
@@ -105,45 +106,46 @@ Hubs are the top-level pages of `wiki-home`; wiki pages are children of their hu
 | `mg-pay` | Pay | `wiki-management` | All | Always | - |
 | `mg-banking` | Banking and financing | `wiki-management` | All | Always | - |
 | `mg-people-matters` | People matters | `wiki-management` | All | Always | - |
-| `db-contracts` | 📜 Contracts | `part-management` | All | Always | - |
-| `db-hiring` | 🙋 Hiring | `part-management` | - | Optional | - |
+| `db-contracts` | 📜 Contracts | `wiki-management` (Records) | All | Always | - |
+| `db-hiring` | 🙋 Hiring | `wiki-management` (Records) | - | Optional | - |
 
 ## Databases
 
 | Part ID | Name in the master | Where it sits | Default for | Condition | Module |
 |---|---|---|---|---|---|
-| `db-projects` | 🚀 Projects | `part-company` | All | Always | - |
-| `db-meetings` | 📅 Meetings | `part-company` | All | Always | - |
-| `db-clients` | 💼 Clients | `part-company` | All | Always | - |
-| `db-people` | 👤 People | `part-company` | All | Always | - |
-| `db-processes` | 🔁 Processes | `part-company` | All | Always | - |
-| `db-partners` | 🧩 Partners | `part-company` | All | Always | - |
-| `db-decisions` | ⚖️ Decisions | `part-company` | All | Always | - |
-| `db-ideas` | 💡 Ideas | `part-company` | All | Always | - |
-| `db-issues` | 📋 Issues | `part-company` | All | Project management chosen | Project management |
-| `db-cycle-board` | 🏃 Cycle board | `part-company` | All | Project management chosen | Project management |
-| `db-cycles` | ⏱️ Cycles | `part-company` | All | Project management chosen | Project management |
-| `db-milestones` | 🏁 Milestones | `part-company` | All | Project management chosen | Project management |
-| `db-deals` | 📈 Deals | `part-company` | All | CRM module chosen | CRM |
-| `db-proof` | ⭐ Proof | `part-company` | Service firms | Kept for service firms; optional otherwise | - |
-| `db-equipment` | 💻 Equipment | `part-company` | - | Optional | - |
-| `db-events` | 🎟️ Events | `part-company` | - | Optional | - |
-| `db-goals` | 🎯 Goals | `part-company` | - | Optional | - |
+| `db-projects` | 🚀 Projects | `pg-databases` (Work) | All | Always | - |
+| `db-issues` | 📋 Issues | `pg-databases` (Work) | All | Project management chosen | Project management |
+| `db-cycle-board` | 🏃 Cycle board | `pg-databases` (Work) | All | Project management chosen | Project management |
+| `db-cycles` | ⏱️ Cycles | `pg-databases` (Work) | All | Project management chosen | Project management |
+| `db-milestones` | 🏁 Milestones | `pg-databases` (Work) | All | Project management chosen | Project management |
+| `db-goals` | 🎯 Goals | `pg-databases` (Work) | - | Optional | - |
+| `db-clients` | 💼 Clients | `pg-databases` (Relationships) | All | Always | - |
+| `db-deals` | 📈 Deals | `pg-databases` (Relationships) | All | CRM module chosen | CRM |
+| `db-people` | 👤 People | `pg-databases` (Relationships) | All | Always | - |
+| `db-partners` | 🧩 Partners | `pg-databases` (Relationships) | All | Always | - |
+| `db-proof` | ⭐ Proof | `pg-databases` (Relationships) | Service firms | Kept for service firms; optional otherwise | - |
+| `db-meetings` | 📅 Meetings | `pg-databases` (Operations) | All | Always | - |
+| `db-decisions` | ⚖️ Decisions | `pg-databases` (Operations) | All | Always | - |
+| `db-ideas` | 💡 Ideas | `pg-databases` (Operations) | All | Always | - |
+| `db-processes` | 🔁 Processes | `pg-databases` (Operations) | All | Always | - |
+| `db-equipment` | 💻 Equipment | `pg-databases` (Operations) | - | Optional | - |
+| `db-events` | 🎟️ Events | `pg-databases` (Operations) | - | Optional | - |
 
 ## Personal space
 
-Children of `part-personal`. Each person's copy keeps what they use (per-person steps, P3).
+Under `part-personal`, whose three children are Home - \<Name>, Agent Instructions - \<Name> and Databases, in that order. Each person's copy keeps what they use (per-person steps, P3).
 
 | Part ID | Name in the master | Where it sits | Default for | Condition | Module |
 |---|---|---|---|---|---|
-| `ps-agent-instructions` | Agent Instructions - \<Name> | `part-personal` | Everyone | Always | - |
-| `ps-notes` | 📝 Notes | `part-personal` | Everyone | Always | - |
-| `ps-projects` | 🎯 Projects | `part-personal` | Owners | Kept for owners; optional for others | - |
-| `ps-my-wiki` | 📚 My wiki | `part-personal` | Everyone | Always | - |
-| `ps-one-to-one` | 1:1 - \<Name> | `part-personal` | Managers | Kept for people who manage others; removed otherwise | - |
-| `ps-reading` | 📖 Reading | `part-personal` | - | Optional | - |
-| `ps-people` | 🫂 People | `part-personal` | - | Optional | - |
-| `ps-tasks` | ✅ Tasks | `part-personal` | - | Optional | - |
+| `ps-my-wiki` | 🏠 Home - \<Name> (wiki; "My wiki" before 1.4) | `part-personal`, first | Everyone | Always | - |
+| `ps-agent-instructions` | Agent Instructions - \<Name> | `part-personal`, second | Everyone | Always | - |
+| `ps-databases` | 🗂️ Databases (plain page) | `part-personal`, third | Everyone | Always | - |
+| `ps-notes` | 📝 Notes | `ps-databases` | Everyone | Always | - |
+| `ps-projects` | 🎯 Projects | `ps-databases` | Owners | Kept for owners; optional for others | - |
+| `ps-reading` | 📖 Reading | `ps-databases` | - | Optional | - |
+| `ps-people` | 🫂 People | `ps-databases` | - | Optional | - |
+| `ps-tasks` | ✅ Tasks | `ps-databases` | - | Optional | - |
+| `ps-one-to-one` | 1:1 - \<Name> | `ps-my-wiki` | Managers | Kept for people who manage others; removed otherwise | - |
 
 ## Parts inside other parts
 
@@ -151,6 +153,10 @@ Properties, views, template sections and text that belong to a module or busines
 
 | Part ID | Name in the master | Where it sits | Default for | Condition | Module |
 |---|---|---|---|---|---|
+| `home-db-links` | A database's mention in the Databases columns of Home - \<Company> | `wiki-home` | All | With its database | - |
+| `home-now-cycle` | "Current cycle" tab in the Now tabs | `wiki-home` | All | Project management chosen | Project management |
+| `home-now-deals` | "Deals today" tab in the Now tabs | `wiki-home` | All | CRM module chosen | CRM |
+| `ps-home-reading` | "Reading" tab in the My records tabs | `ps-my-wiki` | - | With `ps-reading` | - |
 | `props-projects-pm` | Issues, Milestones, Progress, Health, Priority properties; Issues layout tab | `db-projects` | All | Project management chosen | Project management |
 | `rec-issues` | Issues line under Records | `hub-how-we-work` | All | Project management chosen | Project management |
 | `ai-pm` | "Project management for agents" subpage of Agent Instructions and its line under "Specific work"; Issues, Cycles, Milestones table rows; "with project management, each piece of work is an Issue in its Project" in Where things go | `agent-instructions` | All | Project management chosen | Project management |
