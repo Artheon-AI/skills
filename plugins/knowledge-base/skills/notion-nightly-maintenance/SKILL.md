@@ -16,7 +16,6 @@ Fetch the company Agent Instructions and, for a Personal run, the person's Agent
 ## 3. Past daily notes (Personal)
 Query Notes for rows with Type Daily and a Date before today, and fetch the Daily template (its ID is in Agent Instructions - <Name>) to compare.
 - A note that still holds only the template (body and properties as the template left them, nothing added) moves to Trash with `notion-delete-pages`.
-- A note you keep whose title is still a date mention (`<date start="YYYY-MM-DD" />`) gets the plain title "YYYY-MM-DD" from its Date.
 The repeating Daily template creates each day's note; this job never creates one.
 Done when no past daily note holds only the template or keeps a date-mention title.
 

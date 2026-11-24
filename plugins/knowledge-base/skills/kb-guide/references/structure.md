@@ -87,7 +87,7 @@ Each person's Private section mirrors the company teamspace: exactly three items
    - **People**: private contacts, family and friends; business contacts go to the company's People (optional).
    - **Tasks**: the person's own to-do list (optional).
 
-**Daily notes.** The Daily template in Notes repeats every day around midnight, so today's note exists before the person opens Home - <Name>; nobody creates daily notes by hand. The template's title "@Today" makes each note's title a mention of its date. The nightly job gives each kept past daily note the plain title "YYYY-MM-DD" and moves past ones nobody wrote in to Trash. The "By day" view groups Notes by Date, one group per day, newest first.
+**Daily notes.** The Daily template in Notes repeats every day around midnight, so today's note exists before the person opens Home - <Name>; nobody creates daily notes by hand. The template's title "@Today" makes each note's title its date, shown in the person's date format. The nightly job moves past ones nobody wrote in to Trash. The "By day" view groups Notes by Date, one group per day, newest first.
 
 **Open on start** is each person's own setting: Settings > Preferences > Open on start > "Top page in sidebar" opens Home - <Name> when it is the first page of the Private section and the person has no Favorites.
 
