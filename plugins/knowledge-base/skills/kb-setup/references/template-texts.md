@@ -229,7 +229,7 @@ The wikis' Home views, the Databases pages, the module pages and the hubs' Recor
 **Grouped lists.** Projects, Issues and Clients open on their "All" view: a list grouped by Status (Clients: by Stage) in Linear order, empty groups hidden, Done (Clients: Former) collapsed, Canceled hidden. The orders: Issues In progress, Todo, Backlog, Triage, Done; Projects In progress, Planned, Paused, Backlog, Done; Clients Client, Prospect, Former. The module tabs that group by status use the same order. Group order and collapsed groups are set in the app ([app-only steps](app-only-steps.md), A6).
 
 **Home - \<Company>** Home view:
-1. "Start here": mentions of Agent Instructions, the Company map and the People handbook, then the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something."
+1. "Start here": a mention of Agent Instructions, then the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something."
 2. "Knowledge hubs": the seven hubs' page blocks.
 3. "Modules": two columns, each a mention of one module page: Project management, CRM (only the modules this base has).
 4. "Databases": three columns, Project management, CRM and Shared, each a list of mentions of its databases (as on the Databases page).
@@ -263,7 +263,7 @@ Without a module, its page goes; databases that every base keeps (Projects; Clie
 
 **Home - \<Name>** Home view:
 1. Two columns at the very top, no heading: on the left the "New capture" button (adds a Notes page with Type Capture, then opens it); on the right one plain line, "📅 Today's note: <mention of today's daily note>". A mention, not a view, so the nightly personal job can re-point it each day with one targeted edit; setup points it at the person's first daily note. In the master it reads "📅 Today's note:" with a grey placeholder, "set at setup, then each night".
-2. "Start here": mentions of Agent Instructions - \<Name> and Factories, then the `/kb-guide` line.
+2. "Start here": a mention of Agent Instructions - \<Name>, then the `/kb-guide` line.
 3. "Areas": the area page blocks, each with one emoji. The master has one starter area, 🤖 AI, holding the person's **Factories** page (intro line, then "Scheduled jobs": a table Job, When, What it does, Where it runs); the 1:1 page shows here too.
 4. "My records": a tabs block with linked views: Captures, Active projects, Recent notes, Reading (when kept).
 

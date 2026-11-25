@@ -27,6 +27,15 @@ Each entry has:
 5. "This company" and "Company notes" are the company's: never touch them.
 6. Last, when every step is checked: move the Agent Instructions version line to the new version and date, change the Template page's "Template version" line to match, and write `<version> applied <date>` under Updates.
 
+## 1.6 (2026-11-25)
+
+**For people:** a shorter Start here. On Home - \<Company> and Home - \<Name> it holds only the Agent Instructions link and the `/kb-guide` line. The Company map, the People handbook and Factories stay where they live: the Company hub, the Team hub and the person's AI area.
+
+**Steps for agents:**
+1. Home - \<Company>: in "Start here", remove every link except Agent Instructions; keep the `/kb-guide` line ([template texts](template-texts.md)). Done when Start here shows one link and the line.
+2. Each person's Home - \<Name> the owner names: in "Start here", remove every link except Agent Instructions - \<Name>; keep the `/kb-guide` line. The personal space template gets the same change.
+3. Move the version line to `Template version 1.6, <date>` ("Applying an update", step 6).
+
 ## 1.5 (2026-11-24)
 
 **For people:** quieter pages, and work that reads like Linear. Projects, Issues and Clients open on "All": a list grouped by Status (Clients: Stage), In progress first, Done collapsed, Canceled hidden. The Databases page now holds two module pages, Project management and CRM, each with one line on how it works and tabs of live lists, plus a plain Shared page; Home - \<Company> links the module pages in a new Modules row above Databases. "Now" is "At a glance", every tab is a compact list, Projects in progress leaves out Paused, and "Recently updated" is "Wiki edits". Each hub's Records is one tabs block instead of bullets and stacked tables. The People hub is now Team. A client's people show on its page in a Contacts tab, and each person shows their Client. People opens on All, with a new Reach out view; Org chart and Do not contact are gone (the Company map keeps the org chart). The Cycle board's "Backlog" view is "No cycle", Cycles loses its Timeline view, and the sprint template shows one tabs block. Notes opens on By day; its Recent view is gone. Each person gets a Factories page for their own scheduled jobs, inside a starter AI area of Home - \<Name>; the company's Factories page lists company jobs only. Emoji sit only on root items, wikis, hubs and areas, databases, module pages and top-level processes. Records keep their IDs, so agents work as before.

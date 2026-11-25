@@ -17,7 +17,7 @@ This file is the one place for structure facts; update it when the template chan
 Open to every member. Its top level holds exactly three items, in this order:
 
 1. **Home - <Company>**: the company wiki; its top-level pages are the seven hubs. Its Home view is the front door, top to bottom:
-   - **Start here**: Agent Instructions, Notion basics (where the base has one), the Company map, the People handbook, and the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something.";
+   - **Start here**: Agent Instructions and the line "New here or stuck? Type `/kb-guide` in Claude to learn the base or ask how to do something.";
    - **Knowledge hubs**: the seven hubs;
    - **Modules**: two columns linking the module pages, Project management and CRM (those the base has);
    - **Databases**: three columns, Project management, CRM and Shared, each listing its databases;
@@ -78,7 +78,7 @@ Each person's Private section mirrors the company teamspace: exactly three items
 
 1. **Home - <Name>**: the personal wiki; its top-level pages are the person's areas, and managers keep their 1:1 pages here too (one running page per report, shared with that person). Its Home view is the person's Notion home, top to bottom, with the same plain style as the company Home:
    - side by side at the very top: the **New capture** button (adds a Notes page with Type Capture and opens it) and **📅 Today's note**, a link to today's daily note;
-   - **Start here**: Agent Instructions - <Name>, Factories and the `/kb-guide` line;
+   - **Start here**: Agent Instructions - <Name> and the `/kb-guide` line;
    - **Areas**: the area pages, each with an emoji. The AI area holds **Factories**, the person's own scheduled jobs (their nightly job included); the company's Factories page lists company jobs only;
    - **My records**: tabs with Captures, Active projects, Recent notes, and Reading when kept.
 2. **Agent Instructions - <Name>**: "About me" (who I am, current focus, how I work, how to talk to me) and "My space" (the person's pages and databases, template IDs, their conventions, and dated "Structure changes" lines from the weekly job). The person edits it.
