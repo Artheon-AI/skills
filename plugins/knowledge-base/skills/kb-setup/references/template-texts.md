@@ -174,7 +174,7 @@ Hub lines:
 - Team: handbook, learning; hiring, onboarding and offboarding processes.
 - Money: finance rules and how money moves; the numbers live in their own systems.
 - Systems: how we use our tools, accounts and access.
-- AI: our AI setup, what people can add, factories and scheduled jobs.
+- AI: our AI setup, what people can add, automations and scheduled jobs.
 
 ## Text that depends on answers
 
@@ -264,12 +264,14 @@ Without a module, its page goes; databases that every base keeps (Projects; Clie
 **Home - \<Name>** Home view:
 1. Two columns at the very top, no heading: on the left the "New capture" button (adds a Notes page with Type Capture, then opens it); on the right one plain line, "📅 Today's note: <mention of today's daily note>". A mention, not a view, so the nightly personal job can re-point it each day with one targeted edit; setup points it at the person's first daily note. In the master it reads "📅 Today's note:" with a grey placeholder, "set at setup, then each night".
 2. "Start here": a mention of Agent Instructions - \<Name>, then the `/kb-guide` line.
-3. "Areas": the area page blocks, each with one emoji. The master has one starter area, 🤖 AI, holding the person's **Factories** page (intro line, then "Scheduled jobs": a table Job, When, What it does, Where it runs); the 1:1 page shows here too.
+3. "Areas": the area page blocks, each with one emoji. The master has one starter area, 🤖 AI, holding the person's **Automations** page (intro line, then "Scheduled jobs": a table Job, When, What it does, Where it runs); the 1:1 page shows here too.
 4. "My records": a tabs block with linked views: Captures, Active projects, Recent notes, Reading (when kept).
 
 **Databases** (personal): one intro line, then Notes, Projects, Reading, People and Tasks, whichever the person keeps, as child database blocks.
 
-**Factories** (company, under the AI hub): "The company's factories, then the company's scheduled jobs. Each person's own jobs, such as their personal nightly job, are on the Factories page under the AI area of their Home."
+**Automations** (company, under the AI hub): "The company's automations, then the company's scheduled jobs. Each person's own jobs, such as their personal nightly job, are on the Automations page under the AI area of their Home." Then "Automations": "Each automation is a row in Processes with Done by Automation; its definition lives in the automation platform. For each one: what it does, which process it serves, who looks after it, and where it runs." Then "Scheduled jobs": a table Person, Job, When, What it does.
+
+**Automations** (personal, under the AI area): "My scheduled jobs and automations. Company jobs are on the company's Automations page."
 
 **Icons.** Emoji only on each space's root items, wikis, hubs and personal areas, databases, module pages and Shared, and top-level processes. Every other page and row has none.
 
@@ -311,7 +313,7 @@ Read after the company Agent Instructions whenever you work for <Name>. <Name> e
 - <Home - <Name> mention>: my wiki and home page; its top-level pages are my areas.
 - <Databases mention>: the page that holds my databases below.
 - <Notes mention>: captures, notes, daily notes, resources, private meetings. The nightly job creates each day's note from the Daily template and links it from Home - <Name>, so find today's note (Type Daily, Date today) rather than creating one; only the nightly job creates daily notes. When you create a note, set its Daily note to today's daily note; the daily note lists the notes linked to it. Views: By day, Captures, Daily, Resources, Meetings, Edited recently. Templates: Daily `<id>`, Meeting `<id>`; a capture needs none.
-- <Factories mention> (under the AI area of Home - <Name>): my scheduled jobs, one line each. A job of mine is listed here, never on the company's Factories page.
+- <Automations mention> (under the AI area of Home - <Name>): my scheduled jobs, one line each. A job of mine is listed here, never on the company's Automations page.
 - 1:1 pages (copies of <1:1 - Name mention>, under Home - <Name>): one running page per person I meet one to one, shared with them. (Managers.)
 - <Projects mention>: my personal projects. Template: Project `<id>`. (Owners; optional for others.)
 - <Reading mention>: books I read or want to read. (Optional.)

@@ -42,7 +42,7 @@ The top-level pages of the company wiki. Each holds the wiki pages on its topic 
 | Team | People handbook, Learning (optional) | The team in People, Processes with Area Team |
 | Money | Finance rules (approval), How money moves, KPI definitions | Processes with Area Money; the numbers stay in their own systems |
 | Systems | How we use our tools, Accounts and access | Processes with Area Systems; the systems map is in Agent Instructions |
-| AI | AI setup, Getting more, Factories (the company's automations and scheduled jobs) | Ideas with Area AI, Processes |
+| AI | AI setup, Getting more, Automations (the company's automations and scheduled jobs) | Ideas with Area AI, Processes |
 
 ## Company databases
 
@@ -67,7 +67,7 @@ Grouped as on the Databases page. Projects, Issues and Clients open on "All", a 
 - **Meetings**: titled "YYYY-MM-DD Topic - Counterparty"; Type Internal, Client, Partner, Sales or Retro; a Summary, with recording and transcript linked from Drive. Templates Meeting and Retro.
 - **Decisions**: titled as the decision itself. Status Proposed, Accepted, Superseded. "Governs" links the wiki page it changes.
 - **Ideas**: ideas nobody is working on yet. Status New, Exploring, Trying, Parked, Adopted, Dropped.
-- **Processes**: recurring work, titled as a verb phrase. Status Current, Proposed, Retired; Done by a Person, an Agent or a Factory. Views Map, By owner, Proposed.
+- **Processes**: recurring work, titled as a verb phrase. Status Current, Proposed, Retired; Done by a Person, an Agent or an Automation; Runs on and Definition say where an automation runs and link its definition. Views Map, By owner, Proposed.
 - Optional: **Equipment**, **Events**.
 
 Most databases have an "Edited recently" view and a template of the same name as the record (Project, Meeting, Decision, Client, Person, Partner, Process).
@@ -79,7 +79,7 @@ Each person's Private section mirrors the company teamspace: exactly three items
 1. **Home - <Name>**: the personal wiki; its top-level pages are the person's areas, and managers keep their 1:1 pages here too (one running page per report, shared with that person). Its Home view is the person's Notion home, top to bottom, with the same plain style as the company Home:
    - side by side at the very top: the **New capture** button (adds a Notes page with Type Capture and opens it) and **📅 Today's note**, a link to today's daily note;
    - **Start here**: Agent Instructions - <Name> and the `/kb-guide` line;
-   - **Areas**: the area pages, each with an emoji. The AI area holds **Factories**, the person's own scheduled jobs (their nightly job included); the company's Factories page lists company jobs only;
+   - **Areas**: the area pages, each with an emoji. The AI area holds **Automations**, the person's own scheduled jobs (their nightly job included); the company's Automations page lists company jobs only;
    - **My records**: tabs with Captures, Active projects, Recent notes, and Reading when kept.
 2. **Agent Instructions - <Name>**: "About me" (who I am, current focus, how I work, how to talk to me) and "My space" (the person's pages and databases, template IDs, their conventions, and dated "Structure changes" lines from the weekly job). The person edits it.
 3. **Databases**: a plain page with the person's databases:

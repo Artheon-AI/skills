@@ -2,7 +2,7 @@
 
 Run in order; each step starts by reading the Template page and ends by ticking its line. The parts map gives you each part's page or database in this copy. The copy already has the 1.5 shape: under the company part page, Home - \<Company>, Databases (the module pages Project management and CRM and the plain page Shared, each holding its databases) and Agent Instructions; under the Management part page, the Management wiki with Contracts and Hiring inside it; under the personal part page, Home - \<Name>, Agent Instructions - \<Name> and Databases. Where a step needs the app, it names the [app-only step](app-only-steps.md); do that step there and come back.
 
-Contents: B1 remove; B2 translate; B3 module and part settings; B4 template sections; B5 two-way relations; B6 template IDs; B7 Agent Instructions; B8 version line; B9 Factories; B10 team and processes; B11 storage; B12 personal space template.
+Contents: B1 remove; B2 translate; B3 module and part settings; B4 template sections; B5 two-way relations; B6 template IDs; B7 Agent Instructions; B8 version line; B9 Automations; B10 team and processes; B11 storage; B12 personal space template.
 
 ## B1 Remove what was not chosen
 
@@ -133,9 +133,9 @@ Done when every link in the page opens a page or database of this copy (fetch ea
 
 Set the first line to `Template version <x>, <setup date>. Changelog: [template changelog](<changelog URL>).` with the version from the Template page and the changelog URL already in the line.
 
-## B9 Factories page
+## B9 Automations page
 
-On the AI hub's Factories page, list the company's scheduled jobs, one line each: name, what it does, when, whose account, and "not created yet" (setup changes it to "running since <date>"). Each person's own jobs, their nightly job included, go on the Factories page in their personal space (P5), never here. Company jobs: "Notion nightly maintenance - Company" and "Notion weekly maintenance" for the owner; with the CRM module, the optional "Outreach prep - \<Name>" for each seller and "Sales weekly review" for the owner, marked "optional, off".
+On the AI hub's Automations page, list the company's scheduled jobs, one line each: name, what it does, when, whose account, and "not created yet" (setup changes it to "running since <date>"). Each person's own jobs, their nightly job included, go on the Automations page in their personal space (P5), never here. Company jobs: "Notion nightly maintenance - Company" and "Notion weekly maintenance" for the owner; with the CRM module, the optional "Outreach prep - \<Name>" for each seller and "Sales weekly review" for the owner, marked "optional, off".
 
 ## B10 Team and process map rows
 

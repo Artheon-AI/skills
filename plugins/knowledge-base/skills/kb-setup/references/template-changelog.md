@@ -27,6 +27,21 @@ Each entry has:
 5. "This company" and "Company notes" are the company's: never touch them.
 6. Last, when every step is checked: move the Agent Instructions version line to the new version and date, change the Template page's "Template version" line to match, and write `<version> applied <date>` under Updates.
 
+## 1.7 (2026-11-26)
+
+**For people:** "Factory" is now "Automation", the only word for work that runs on its own. The Factories pages are called Automations, and Processes can say where an automation runs and link its definition.
+
+**Steps for agents:**
+1. Processes (`db-processes`): rename the Done by option Factory to Automation in the app, so rows keep it (A6, "Renaming a select option"). Set the Done by description: "Person: a person does it. Agent: a person's agent does it for them. Automation: it runs on its own in the company's automation platform." Done when Done by offers Person, Agent and Automation.
+2. Processes: add the select "Runs on" (n8n, Claude schedule, Owner agent; description "For Done by Automation or Agent: where it runs.") and the text property "Definition" (description "For automations: links to the n8n workflow and the skill it runs."). Add both to the page layout's properties as hide-if-empty. Done when a fetch of Processes lists both.
+3. Company Factories page (`pg-factories`): rename it "Automations" and replace its intro and the "Factories" section with the texts in [template texts](template-texts.md), "Automations" (company); the section heading becomes "Automations". Keep the Scheduled jobs table and its rows.
+4. Each person's Factories page (`ps-factories`) the owner names, and the personal space template: rename it "Automations" and change "the company's Factories page" to "the company's Automations page" in its intro. In Agent Instructions - \<Name>, the line for that page ends "never on the company's Automations page."
+5. AI hub (`hub-ai`): in its intro, "factories" becomes "automations". In "How this base works" nothing changes; the Hubs line for AI sits in "This company", so name it to the owner and change it after their yes: "our AI setup, what people can add, automations and scheduled jobs."
+6. Glossary: if the base defines Factory, mark it retired and point it to Automation.
+7. Move the version line to `Template version 1.7, <date>` ("Applying an update", step 6).
+
+Part IDs `pg-factories` and `ps-factories` keep their names; only the page titles change.
+
 ## 1.6 (2026-11-25)
 
 **For people:** a shorter Start here. On Home - \<Company> and Home - \<Name> it holds only the Agent Instructions link and the `/kb-guide` line. The Company map, the People handbook and Factories stay where they live: the Company hub, the Team hub and the person's AI area.

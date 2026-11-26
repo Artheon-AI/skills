@@ -98,7 +98,7 @@ Hubs are the top-level pages of `wiki-home`; wiki pages are children of their hu
 | `pg-accounts-access` | Accounts and access | `hub-systems` | All | Always | - |
 | `pg-ai-setup` | AI setup | `hub-ai` | All | Always | - |
 | `pg-getting-more` | Getting more | `hub-ai` | All | Always | - |
-| `pg-factories` | Factories | `hub-ai` | All | Always | - |
+| `pg-factories` | Automations | `hub-ai` | All | Always | - |
 
 ## Management
 
@@ -149,7 +149,7 @@ Under `part-personal`, whose three children are Home - \<Name>, Agent Instructio
 | `ps-people` | 🫂 People | `ps-databases` | - | Optional | - |
 | `ps-tasks` | ✅ Tasks | `ps-databases` | - | Optional | - |
 | `ps-area-ai` | 🤖 AI (starter area) | `ps-my-wiki`, first area | Everyone | Always; the person may rename it to one of their own areas | - |
-| `ps-factories` | Factories (the person's scheduled jobs) | `ps-area-ai` | Everyone | Always | - |
+| `ps-factories` | Automations (the person's scheduled jobs) | `ps-area-ai` | Everyone | Always | - |
 | `ps-one-to-one` | 1:1 - \<Name> | `ps-my-wiki` | Managers | Kept for people who manage others; removed otherwise | - |
 
 ## Parts inside other parts

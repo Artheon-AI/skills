@@ -53,7 +53,7 @@ One at a time, in this order. Each answer becomes a systems map row (moving part
 4. Client records: where they are kept today.
 5. Tasks: where work is tracked today.
 6. Chat and email: what the team uses and for what.
-7. Meetings: where they happen, whether they are recorded, and whether the Google Workspace edition can record Meet (Business Standard or higher), which the meeting factory needs.
+7. Meetings: where they happen, whether they are recorded, and whether the Google Workspace edition can record Meet (Business Standard or higher), which the meeting automation needs.
 8. Password manager (1Password or Bitwarden if none).
 9. Where relevant: the shop platform (e-commerce) or code hosting (software firms).
 
@@ -70,7 +70,7 @@ Names, emails, roles (these become groups), job titles, who reports to whom, who
 
 ## S7 High-level process map
 
-The owner's main recurring work per hub (Company, Customers and offer, How we work, People, Money, Systems, AI), including management work such as the weekly leadership meeting. For each: a verb-phrase name, its owner, and whether a person, an agent or a factory does it, and how often. Top level only; deeper mapping is Artheon's paid process mapping. Written as Processes rows in B10.
+The owner's main recurring work per hub (Company, Customers and offer, How we work, People, Money, Systems, AI), including management work such as the weekly leadership meeting. For each: a verb-phrase name, its owner, and whether a person, an agent or an automation does it, and how often. Top level only; deeper mapping is Artheon's paid process mapping. Written as Processes rows in B10.
 
 ## S8 Batches
 

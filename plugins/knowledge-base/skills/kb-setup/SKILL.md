@@ -69,7 +69,7 @@ Each step has an ID. At S1, write the whole list below to the Template page's "S
 - B6 Template IDs
 - B7 Fill Agent Instructions' company part
 - B8 Version line
-- B9 Factories page
+- B9 Automations page
 - B10 Team and process map rows
 - B11 Drive or other storage
 - B12 Park the personal space template under the Template page
